@@ -1,0 +1,734 @@
+{
+  "celecoxib": {
+    "entity": "celecoxib",
+    "targets": [
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "9.3",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "0.7",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "120.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "2000.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "3600.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "26400.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "5100.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "79.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "600.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "39.81",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "0.02",
+        "units": "ug.mL-1",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "1.86",
+        "units": "ug.mL-1",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "0.02",
+        "units": "ug.mL-1",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "1.86",
+        "units": "ug.mL-1",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "100000.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "54.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "14000.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "1200.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "22900.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "57.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Cyclooxygenase-2 inhibitor",
+        "type": "INHIBITOR",
+        "source": "mechanism record"
+      }
+    ],
+    "anchors": [
+      {
+        "module": "prostaglandin",
+        "sign": -1,
+        "gain": null,
+        "target": "Cyclooxygenase-2 inhibitor",
+        "action": "INHIBITOR",
+        "affinity_m": 7e-10,
+        "basis": "known"
+      },
+      {
+        "module": "pyrogen",
+        "sign": -1,
+        "gain": null,
+        "target": "Cyclooxygenase-2 inhibitor",
+        "action": "INHIBITOR",
+        "affinity_m": 7e-10,
+        "basis": "known"
+      },
+      {
+        "module": "nfkb",
+        "sign": -1,
+        "gain": null,
+        "target": "Cyclooxygenase-2 inhibitor",
+        "action": "INHIBITOR",
+        "affinity_m": 9.3e-09,
+        "basis": "known"
+      },
+      {
+        "module": "platelet",
+        "sign": 1,
+        "gain": null,
+        "target": "Cyclooxygenase-2 inhibitor",
+        "action": "INHIBITOR",
+        "affinity_m": 7e-10,
+        "basis": "known"
+      },
+      {
+        "module": "coronary_flow",
+        "sign": -1,
+        "gain": null,
+        "target": "Cyclooxygenase-2 inhibitor",
+        "action": "INHIBITOR",
+        "affinity_m": 9.3e-09,
+        "basis": "known"
+      },
+      {
+        "module": "pulmonary_vr",
+        "sign": 1,
+        "gain": null,
+        "target": "Cyclooxygenase-2 inhibitor",
+        "action": "INHIBITOR",
+        "affinity_m": 9.3e-09,
+        "basis": "known"
+      }
+    ],
+    "peaks": {
+      "platelet": {
+        "sign": "+",
+        "peak": 0.367
+      },
+      "thrombin": {
+        "sign": "+",
+        "peak": 0.163
+      },
+      "fibrin": {
+        "sign": "+",
+        "peak": 0.083
+      },
+      "coronary_flow": {
+        "sign": "-",
+        "peak": 0.336
+      },
+      "pulmonary_vr": {
+        "sign": "+",
+        "peak": 0.33
+      },
+      "prostaglandin": {
+        "sign": "-",
+        "peak": 1.168
+      },
+      "consumption_coag": {
+        "sign": "-",
+        "peak": 0.208
+      }
+    },
+    "outcome_paths": [
+      {
+        "event_index": 0,
+        "node": "body:platelet",
+        "label": "Platelet activation",
+        "responded": true,
+        "peak": 0.3667,
+        "found": true,
+        "chain": [
+          {
+            "id": "allergen",
+            "label": "allergen"
+          },
+          {
+            "id": "body:dendritic",
+            "label": "Dendritic cell antigen presentation",
+            "peak": 0.2179,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:tcell",
+            "label": "T cell activation",
+            "peak": 0.1459,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:il10",
+            "label": "IL-10 anti-inflammatory regulation",
+            "peak": 0.1579,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:resolution",
+            "label": "Inflammation resolution and resolvin pathway",
+            "peak": 0.2572,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:nfkb",
+            "label": "NF-κB inflammatory transcription",
+            "peak": 0.7655,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:tnf",
+            "label": "TNF-α surge",
+            "peak": 0.4722,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:platelet",
+            "label": "Platelet activation",
+            "peak": 0.3667,
+            "direction": "increase"
+          }
+        ]
+      },
+      {
+        "event_index": 0,
+        "node": "body:thrombin",
+        "label": "Thrombin generation",
+        "responded": true,
+        "peak": 0.1634,
+        "found": true,
+        "chain": [
+          {
+            "id": "body:dendritic",
+            "label": "Dendritic cell antigen presentation",
+            "peak": 0.2179,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:tcell",
+            "label": "T cell activation",
+            "peak": 0.1459,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:il10",
+            "label": "IL-10 anti-inflammatory regulation",
+            "peak": 0.1579,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:resolution",
+            "label": "Inflammation resolution and resolvin pathway",
+            "peak": 0.2572,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:nfkb",
+            "label": "NF-κB inflammatory transcription",
+            "peak": 0.7655,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:tnf",
+            "label": "TNF-α surge",
+            "peak": 0.4722,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:platelet",
+            "label": "Platelet activation",
+            "peak": 0.3667,
+            "direction": "increase"
+          },
+          {
+            "id": "body:thrombin",
+            "label": "Thrombin generation",
+            "peak": 0.1634,
+            "direction": "increase"
+          }
+        ]
+      }
+    ]
+  },
+  "ibuprofen": {
+    "entity": "ibuprofen",
+    "targets": [
+      {
+        "target": "Prostaglandin G/H synthase (cyclooxygenase)",
+        "type": "IC50",
+        "value": "220.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "3000.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "30000.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin-H2 D-isomerase",
+        "type": "IC50",
+        "value": "13000.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "1060.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "9000.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "8000.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "6300.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Cyclooxygenase",
+        "type": "IC50",
+        "value": "2000.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "11100.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "100.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "3000.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 2",
+        "type": "IC50",
+        "value": "30000.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Prostaglandin G/H synthase 1",
+        "type": "IC50",
+        "value": "3000.0",
+        "units": "nM",
+        "source": "ChEMBL activity record"
+      },
+      {
+        "target": "Cyclooxygenase inhibitor",
+        "type": "INHIBITOR",
+        "source": "mechanism record"
+      }
+    ],
+    "anchors": [
+      {
+        "module": "prostaglandin",
+        "sign": -1,
+        "gain": null,
+        "target": "Cyclooxygenase inhibitor",
+        "action": "INHIBITOR",
+        "affinity_m": 1.0000000000000001e-07,
+        "basis": "known"
+      },
+      {
+        "module": "platelet",
+        "sign": -1,
+        "gain": null,
+        "target": "Cyclooxygenase inhibitor",
+        "action": "INHIBITOR",
+        "affinity_m": 1.0000000000000001e-07,
+        "basis": "known"
+      },
+      {
+        "module": "pyrogen",
+        "sign": -1,
+        "gain": null,
+        "target": "Cyclooxygenase inhibitor",
+        "action": "INHIBITOR",
+        "affinity_m": 1.0000000000000001e-07,
+        "basis": "known"
+      },
+      {
+        "module": "nfkb",
+        "sign": -1,
+        "gain": null,
+        "target": "Prostaglandin G/H synthase 2",
+        "action": "IC50 assay -> assumed inhibition",
+        "affinity_m": 3e-05,
+        "basis": "known"
+      },
+      {
+        "module": "coronary_flow",
+        "sign": -1,
+        "gain": null,
+        "target": "Prostaglandin G/H synthase 2",
+        "action": "IC50 assay -> assumed inhibition",
+        "affinity_m": 3e-05,
+        "basis": "known"
+      },
+      {
+        "module": "pulmonary_vr",
+        "sign": 1,
+        "gain": null,
+        "target": "Prostaglandin G/H synthase 2",
+        "action": "IC50 assay -> assumed inhibition",
+        "affinity_m": 3e-05,
+        "basis": "known"
+      },
+      {
+        "module": "airway_inflammation",
+        "sign": -1,
+        "gain": null,
+        "target": "Polyunsaturated fatty acid 5-lipoxygenase",
+        "action": "IC50 assay -> assumed inhibition",
+        "affinity_m": 1.4000000000000001e-05,
+        "basis": "known"
+      },
+      {
+        "module": "mucus",
+        "sign": -1,
+        "gain": null,
+        "target": "Polyunsaturated fatty acid 5-lipoxygenase",
+        "action": "IC50 assay -> assumed inhibition",
+        "affinity_m": 1.4000000000000001e-05,
+        "basis": "known"
+      },
+      {
+        "module": "platelet",
+        "sign": 1,
+        "gain": null,
+        "target": "cyclooxygenase-2",
+        "action": "inhibitor (built-in target profile)",
+        "affinity_m": null,
+        "basis": "known"
+      }
+    ],
+    "peaks": {
+      "platelet": {
+        "sign": "-",
+        "peak": 0.644
+      },
+      "thrombin": {
+        "sign": "-",
+        "peak": 0.348
+      },
+      "fibrin": {
+        "sign": "-",
+        "peak": 0.18
+      },
+      "coronary_flow": {
+        "sign": "-",
+        "peak": 0.116
+      },
+      "pulmonary_vr": {
+        "sign": "+",
+        "peak": 0.163
+      },
+      "prostaglandin": {
+        "sign": "-",
+        "peak": 1.017
+      },
+      "consumption_coag": {
+        "sign": "-",
+        "peak": 0.251
+      }
+    },
+    "outcome_paths": [
+      {
+        "event_index": 0,
+        "node": "body:platelet",
+        "label": "Platelet activation",
+        "responded": true,
+        "peak": 0.6439,
+        "found": true,
+        "chain": [
+          {
+            "id": "body:tcell",
+            "label": "T cell activation",
+            "peak": 0.0665,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:il10",
+            "label": "IL-10 anti-inflammatory regulation",
+            "peak": 0.0781,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:resolution",
+            "label": "Inflammation resolution and resolvin pathway",
+            "peak": 0.1217,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:nfkb",
+            "label": "NF-κB inflammatory transcription",
+            "peak": 0.3976,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:systemic_inflammation",
+            "label": "Systemic inflammatory load",
+            "peak": 0.2422,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:anticoagulant",
+            "label": "Antithrombin · protein C anticoagulation",
+            "peak": 0.1844,
+            "direction": "increase"
+          },
+          {
+            "id": "body:thrombin",
+            "label": "Thrombin generation",
+            "peak": 0.3479,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:platelet",
+            "label": "Platelet activation",
+            "peak": 0.6439,
+            "direction": "decrease"
+          }
+        ]
+      },
+      {
+        "event_index": 0,
+        "node": "body:thrombin",
+        "label": "Thrombin generation",
+        "responded": true,
+        "peak": 0.3479,
+        "found": true,
+        "chain": [
+          {
+            "id": "body:dendritic",
+            "label": "Dendritic cell antigen presentation",
+            "peak": 0.1061,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:tcell",
+            "label": "T cell activation",
+            "peak": 0.0665,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:il10",
+            "label": "IL-10 anti-inflammatory regulation",
+            "peak": 0.0781,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:resolution",
+            "label": "Inflammation resolution and resolvin pathway",
+            "peak": 0.1217,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:nfkb",
+            "label": "NF-κB inflammatory transcription",
+            "peak": 0.3976,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:tnf",
+            "label": "TNF-α surge",
+            "peak": 0.2454,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:platelet",
+            "label": "Platelet activation",
+            "peak": 0.6439,
+            "direction": "decrease"
+          },
+          {
+            "id": "body:thrombin",
+            "label": "Thrombin generation",
+            "peak": 0.3479,
+            "direction": "decrease"
+          }
+        ]
+      }
+    ]
+  },
+  "ablation_A_no_pgi2_arm": {
+    "removed_anchors": [
+      [
+        "prostaglandin",
+        1
+      ],
+      [
+        "pyrogen",
+        1
+      ],
+      [
+        "nfkb",
+        1
+      ]
+    ],
+    "celecoxib_platelet": {
+      "sign": "-",
+      "peak": 1.023
+    },
+    "celecoxib_thrombin": {
+      "sign": "-",
+      "peak": 0.617
+    },
+    "interpretation": "without the PGI2 arm the prothrombotic signal should collapse"
+  },
+  "ablation_B_no_cox1_arm": {
+    "removed_anchor_rows": [
+      "cyclooxygenase-?1|prostaglandin.*synthase.*\\b1\\b|ptgs1|cox-?1\\b",
+      "cyclooxygenase|prostaglandin.?endo|ptgs\\b"
+    ],
+    "ibuprofen_platelet": {
+      "sign": "+",
+      "peak": 0.173
+    },
+    "ibuprofen_thrombin": {
+      "sign": "+",
+      "peak": 0.076
+    },
+    "interpretation": "without the COX-1 arm, residual COX-2 inhibition should flip ibuprofen prothrombotic (celecoxib-like)"
+  },
+  "mechanism_summary": "Same network, same two COX rows. Direction is decided by which arm carries measured potency (ChEMBL selectivity), not by a drug->effect table."
+}

@@ -1,0 +1,810 @@
+{
+  "benchmark": "external, literature-curated (not fitted to the model)",
+  "n_scenarios": 28,
+  "module_recall": 0.9091,
+  "misses_by_reason": {
+    "direction": 1,
+    "no_anchor": 3
+  },
+  "quiet_violations": 0,
+  "outcome_paths": {
+    "claimed": 0,
+    "found": 0
+  },
+  "unresolved_entities": [
+    "adalimumab",
+    "alteplase",
+    "rituximab"
+  ],
+  "results": [
+    {
+      "id": "h3_naproxen_nsaid",
+      "refs": [
+        "Naprosyn label: nonselective COX inhibitor -> antiplatelet; renal PG loss -> Na retention"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "prostaglandin",
+          "sign": "-",
+          "peak": 1.0689
+        },
+        {
+          "module": "platelet",
+          "sign": "-",
+          "peak": 0.6526
+        },
+        {
+          "module": "sodium_load",
+          "sign": "+",
+          "peak": 0.3477
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "airway_inflammation",
+        "coronary_flow",
+        "mucus",
+        "nfkb",
+        "platelet",
+        "prostaglandin",
+        "pulmonary_vr",
+        "pyrogen"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_enalapril_ace",
+      "refs": [
+        "Vasotec label: ACE inhibitor -> reduced AngII and aldosterone"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "angiotensin",
+          "sign": "-",
+          "peak": 0.7411
+        },
+        {
+          "module": "aldosterone",
+          "sign": "-",
+          "peak": 1.1
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "aldosterone",
+        "angiotensin"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_valsartan_arb",
+      "refs": [
+        "Diovan label: AT1 receptor blocker -> less aldosterone signaling and vasoconstriction"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "aldosterone",
+          "sign": "-",
+          "peak": 0.6933
+        },
+        {
+          "module": "peripheral_perfusion",
+          "sign": "+",
+          "peak": 0.7733
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "aldosterone",
+        "peripheral_perfusion"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_dutasteride_5ar",
+      "refs": [
+        "Avodart label: 5-alpha-reductase inhibitor -> DHT reduction"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "gonadal_steroid",
+          "sign": "-",
+          "peak": 0.639
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "gonadal_steroid"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_famotidine_h2",
+      "refs": [
+        "Pepcid label: H2 antagonist -> gastric acid suppression"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "gastric_acid",
+          "sign": "-",
+          "peak": 0.7804
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "gastric_acid"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_oxybutynin_antimusc",
+      "refs": [
+        "Ditropan label: antimuscarinic -> urinary retention and dry secretions"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "parasympathetic",
+          "sign": "-",
+          "peak": 0.7523
+        },
+        {
+          "module": "mucus",
+          "sign": "-",
+          "peak": 0.2982
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "parasympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_phenylephrine_a1",
+      "refs": [
+        "G&G: alpha-1 agonist -> vasoconstriction"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "peripheral_perfusion",
+          "sign": "-",
+          "peak": 0.8327
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "browning",
+        "contractility",
+        "hrv",
+        "lipolysis",
+        "micturition",
+        "peripheral_perfusion",
+        "preload",
+        "sympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_mirtazapine_appetite",
+      "refs": [
+        "Remeron label: H1 antagonism -> increased appetite/weight gain and sedation"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "appetite",
+          "sign": "+",
+          "peak": 1.1652
+        }
+      ],
+      "misses": [
+        {
+          "module": "arousal",
+          "want": "-",
+          "sign": "+",
+          "peak": 0.5146,
+          "reason": "direction"
+        }
+      ],
+      "quiet_violations": [],
+      "anchors": [
+        "appetite",
+        "arousal",
+        "dopamine_reward",
+        "emetic_drive",
+        "histamine",
+        "micturition",
+        "mood",
+        "motility",
+        "pain",
+        "peripheral_perfusion",
+        "preload",
+        "prolactin",
+        "satiety",
+        "serotonin_tone",
+        "sympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_pregabalin_a2d",
+      "refs": [
+        "Lyrica label: alpha2delta ligand -> reduced nociceptive transmission"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "pain",
+          "sign": "-",
+          "peak": 0.5909
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "contractility",
+        "pain",
+        "peripheral_perfusion"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_ketamine_nmda",
+      "refs": [
+        "Ketalar label: NMDA antagonist -> analgesia"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "pain",
+          "sign": "-",
+          "peak": 0.5131
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "memory_consolidation",
+        "neuroinflammation",
+        "pain"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_estradiol_er",
+      "refs": [
+        "G&G: estrogen suppresses osteoclast resorption; raises gonadal steroid tone"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "resorption",
+          "sign": "-",
+          "peak": 0.2521
+        },
+        {
+          "module": "gonadal_steroid",
+          "sign": "+",
+          "peak": 0.5216
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "gonadal_steroid",
+        "gonadotropin",
+        "resorption"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_acetaminophen_napqi",
+      "refs": [
+        "G&G: NAPQI metabolite depletes hepatic glutathione"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "glutathione",
+          "sign": "-",
+          "peak": 0.8553
+        },
+        {
+          "module": "hepatic_load",
+          "sign": "+",
+          "peak": 1.0836
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "coronary_flow",
+        "glutathione",
+        "hepatic_load",
+        "nfkb",
+        "pain",
+        "platelet",
+        "prostaglandin",
+        "pulmonary_vr",
+        "pyrogen"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_adalimumab_tnf",
+      "refs": [
+        "Humira label: anti-TNF -> TNF-alpha neutralization"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "tnf",
+          "sign": "-",
+          "peak": 1.0848
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "nfkb",
+        "tnf"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_rituximab_cd20",
+      "refs": [
+        "Rituxan label: anti-CD20 -> B-cell depletion"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "bcell",
+          "sign": "-",
+          "peak": 0.4803
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "bcell"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_rosuvastatin_statin",
+      "refs": [
+        "Crestor label: HMG-CoA reductase inhibition"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "cholesterol_syn",
+          "sign": "-",
+          "peak": 0.4637
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "cholesterol_syn",
+        "vldl"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_oxycodone_opioid",
+      "refs": [
+        "OxyContin label: mu-opioid -> respiratory depression, analgesia, constipation"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "ventilation",
+          "sign": "-",
+          "peak": 0.5385
+        },
+        {
+          "module": "pain",
+          "sign": "-",
+          "peak": 0.8456
+        },
+        {
+          "module": "motility",
+          "sign": "-",
+          "peak": 0.6829
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "gi_fluid_loss",
+        "motility",
+        "pain",
+        "parasympathetic",
+        "ventilation"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_amiodarone_qt",
+      "refs": [
+        "Cordarone label: QT prolongation via hERG/K-channel blockade"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "arrhythmia_risk",
+          "sign": "+",
+          "peak": 0.7815
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arrhythmia_risk"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_neostigmine_ache",
+      "refs": [
+        "G&G: acetylcholinesterase inhibitor -> increased cholinergic tone"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "parasympathetic",
+          "sign": "+",
+          "peak": 0.2791
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "cognitive_load",
+        "parasympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_atropine_musc",
+      "refs": [
+        "G&G: muscarinic antagonist -> reduced secretions (antisialagogue use)"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "parasympathetic",
+          "sign": "-",
+          "peak": 0.7525
+        },
+        {
+          "module": "mucus",
+          "sign": "-",
+          "peak": 0.2983
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "parasympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_bromocriptine_d2",
+      "refs": [
+        "Parlodel label: D2 agonist -> prolactin suppression (prolactinoma therapy)"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "prolactin",
+          "sign": "-",
+          "peak": 0.775
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "dopamine_reward",
+        "emetic_drive",
+        "motility",
+        "prolactin"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_indomethacin_nsaid",
+      "refs": [
+        "Indocin label: nonselective COX inhibitor"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "prostaglandin",
+          "sign": "-",
+          "peak": 1.0735
+        },
+        {
+          "module": "platelet",
+          "sign": "-",
+          "peak": 0.9756
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "coronary_flow",
+        "nfkb",
+        "platelet",
+        "prostaglandin",
+        "pulmonary_vr",
+        "pyrogen"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_carbamazepine_siadh",
+      "refs": [
+        "Tegretol label: SIADH/hyponatremia is a documented adverse effect (ADH release)"
+      ],
+      "n_expected": 1,
+      "hits": [],
+      "misses": [
+        {
+          "module": "adh",
+          "want": "+",
+          "peak": 0.0031,
+          "reason": "no_anchor"
+        }
+      ],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_txa_antifib",
+      "refs": [
+        "Cyklokapron label: lysine-analog antifibrinolytic -> plasmin inhibition"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "fibrinolysis",
+          "sign": "-",
+          "peak": 0.6491
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "fibrinolysis"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_alteplase_tpa",
+      "refs": [
+        "Activase label: tPA -> plasminogen activation -> fibrinolysis"
+      ],
+      "n_expected": 2,
+      "hits": [],
+      "misses": [
+        {
+          "module": "fibrinolysis",
+          "want": "+",
+          "peak": 0.0,
+          "reason": "no_anchor"
+        },
+        {
+          "module": "fibrin",
+          "want": "-",
+          "peak": 0.0,
+          "reason": "no_anchor"
+        }
+      ],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_linaclotide_gcc",
+      "refs": [
+        "Linzess label: guanylate cyclase-C agonist -> intestinal secretion and transit"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "gi_fluid_loss",
+          "sign": "+",
+          "peak": 0.3973
+        },
+        {
+          "module": "motility",
+          "sign": "+",
+          "peak": 0.7844
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "gi_fluid_loss",
+        "motility"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_guanfacine_a2",
+      "refs": [
+        "Tenex label: alpha-2A agonist -> reduced sympathetic outflow"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "sympathetic",
+          "sign": "-",
+          "peak": 0.4954
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "micturition",
+        "peripheral_perfusion",
+        "preload",
+        "sympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_water_load",
+      "refs": [
+        "Guyton: water load -> volume expansion -> ADH suppression (opposite of dehydration)"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "plasma_vol",
+          "sign": "+",
+          "peak": 0.236
+        },
+        {
+          "module": "adh",
+          "sign": "-",
+          "peak": 0.6739
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h3_orthostasis",
+      "refs": [
+        "Guyton: postural change -> venous pooling -> orthostatic stress"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "orthostatic_stress",
+          "sign": "+",
+          "peak": 0.4472
+        },
+        {
+          "module": "syncope_risk",
+          "sign": "+",
+          "peak": 0.221
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    }
+  ]
+}

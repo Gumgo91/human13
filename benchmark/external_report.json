@@ -1,0 +1,1158 @@
+{
+  "benchmark": "external, literature-curated (not fitted to the model)",
+  "n_scenarios": 31,
+  "module_recall": 1.0,
+  "misses_by_reason": {},
+  "quiet_violations": 4,
+  "outcome_paths": {
+    "claimed": 1,
+    "found": 1
+  },
+  "unresolved_entities": [],
+  "results": [
+    {
+      "id": "ext_albuterol_bronchodilation",
+      "refs": [
+        "IUPHAR/BPS Guide to Pharmacology: beta-2 adrenoceptor, salbutamol agonist",
+        "FDA label: ProAir HFA (albuterol sulfate) inhalation aerosol, DailyMed",
+        "Global Initiative for Asthma (GINA): SABA reliever bronchodilation",
+        "quiet corrected: beta2 agonism is lipolytic (IUPHAR/BPS ADRB2); not a quiet module"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "airway",
+          "sign": "-",
+          "peak": 0.7815
+        },
+        {
+          "module": "ventilation",
+          "sign": "+",
+          "peak": 0.1929
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "airway",
+        "lipolysis"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_propranolol_beta_blockade",
+      "refs": [
+        "IUPHAR/BPS: propranolol nonselective beta-adrenoceptor antagonist",
+        "FDA label: Inderal (propranolol HCl), DailyMed",
+        "Goodman & Gilman 14e, ch.12: beta-blockade reduces contractility, vagal predominance"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "contractility",
+          "sign": "-",
+          "peak": 0.4744
+        },
+        {
+          "module": "hrv",
+          "sign": "+",
+          "peak": 0.4618
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "airway",
+        "contractility",
+        "hrv",
+        "lipolysis"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_lisinopril_ace",
+      "refs": [
+        "IUPHAR/BPS: ACE inhibition, lisinopril",
+        "FDA label: Zestril (lisinopril), DailyMed",
+        "Guyton & Hall 14e ch.19: RAAS blockade lowers AngII and aldosterone",
+        "quiet corrected: ACE inhibition -> pressure drop -> baroreflex sympathetic -> mild lipolysis (Guyton ch.18)"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "angiotensin",
+          "sign": "-",
+          "peak": 0.734
+        },
+        {
+          "module": "aldosterone",
+          "sign": "-",
+          "peak": 1.0996
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "aldosterone",
+        "angiotensin"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_losartan_at1",
+      "refs": [
+        "IUPHAR/BPS: AT1 receptor antagonist, losartan",
+        "FDA label: Cozaar (losartan potassium), DailyMed"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "aldosterone",
+          "sign": "-",
+          "peak": 0.6907
+        },
+        {
+          "module": "peripheral_perfusion",
+          "sign": "+",
+          "peak": 0.7733
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [
+        "mucus"
+      ],
+      "anchors": [
+        "aldosterone",
+        "peripheral_perfusion"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_furosemide_diuresis",
+      "refs": [
+        "IUPHAR/BPS: NKCC2 (SLC12A1) inhibitor, furosemide",
+        "FDA label: Lasix (furosemide), DailyMed",
+        "Guyton & Hall 14e ch.28: loop diuretic blocks Na/K/2Cl reabsorption"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "urine_output",
+          "sign": "+",
+          "peak": 0.7462
+        },
+        {
+          "module": "sodium_load",
+          "sign": "-",
+          "peak": 0.7826
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "adenosine",
+        "arousal",
+        "bicarbonate",
+        "cortisol",
+        "k_depletion",
+        "sodium_load",
+        "sympathetic",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_spironolactone_k_sparing",
+      "refs": [
+        "IUPHAR/BPS: mineralocorticoid receptor antagonist, spironolactone",
+        "FDA label: Aldactone (spironolactone), DailyMed",
+        "Guyton & Hall 14e ch.28: aldosterone antagonist spares potassium, mild diuresis"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "aldosterone",
+          "sign": "-",
+          "peak": 0.6321
+        },
+        {
+          "module": "enac",
+          "sign": "-",
+          "peak": 0.9474
+        },
+        {
+          "module": "urine_output",
+          "sign": "+",
+          "peak": 0.4211
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "aldosterone",
+        "cortisol",
+        "enac",
+        "epo",
+        "gonadal_steroid",
+        "gonadotropin",
+        "kaliuresis",
+        "nfkb",
+        "resorption",
+        "sodium_load",
+        "tcell",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_atorvastatin_hmgcr",
+      "refs": [
+        "IUPHAR/BPS: HMG-CoA reductase inhibitor, atorvastatin",
+        "FDA label: Lipitor (atorvastatin calcium), DailyMed"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "cholesterol_syn",
+          "sign": "-",
+          "peak": 0.4684
+        },
+        {
+          "module": "vldl",
+          "sign": "-",
+          "peak": 0.7121
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "cholesterol_syn",
+        "vldl"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_warfarin_anticoag",
+      "refs": [
+        "IUPHAR/BPS: VKORC1 inhibitor, warfarin",
+        "FDA label: Coumadin (warfarin sodium), DailyMed",
+        "Goodman & Gilman 14e ch.32: reduced gamma-carboxylation lowers functional factors II/VII/IX/X"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "thrombin",
+          "sign": "-",
+          "peak": 1.1204
+        },
+        {
+          "module": "fibrin",
+          "sign": "-",
+          "peak": 0.5745
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "anticoagulant",
+        "cholesterol_syn",
+        "thrombin",
+        "vldl"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_ondansetron_antiemetic",
+      "refs": [
+        "IUPHAR/BPS: 5-HT3 receptor antagonist, ondansetron",
+        "FDA label: Zofran (ondansetron), DailyMed"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "emetic_drive",
+          "sign": "-",
+          "peak": 0.5921
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "dopamine_reward",
+        "emetic_drive",
+        "motility",
+        "parasympathetic",
+        "prolactin",
+        "ventilation"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_digoxin_inotropy",
+      "refs": [
+        "IUPHAR/BPS: Na+/K+-ATPase inhibitor, digoxin",
+        "FDA label: Lanoxin (digoxin), DailyMed",
+        "Goodman & Gilman 14e ch.29: pump inhibition raises intracellular Ca, positive inotropy"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "contractility",
+          "sign": "+",
+          "peak": 0.7815
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arrhythmia_risk",
+        "contractility"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_sildenafil_pde5",
+      "refs": [
+        "IUPHAR/BPS: PDE5 inhibitor, sildenafil",
+        "FDA label: Viagra (sildenafil citrate), DailyMed",
+        "quiet corrected: PDE5 inhibition potentiates ANP/cGMP-mediated natriuresis (PDE5A expressed in kidney)"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "peripheral_perfusion",
+          "sign": "+",
+          "peak": 0.1351
+        },
+        {
+          "module": "nitric_oxide",
+          "sign": "+",
+          "peak": 0.7416
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "airway_inflammation",
+        "arrhythmia_risk",
+        "contractility",
+        "nfkb",
+        "nitric_oxide",
+        "platelet",
+        "pulmonary_vr"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_clonidine_central_alpha2",
+      "refs": [
+        "IUPHAR/BPS: alpha-2 adrenoceptor agonist, clonidine",
+        "FDA label: Catapres (clonidine HCl), DailyMed",
+        "Goodman & Gilman 14e ch.12: central alpha2 agonism reduces sympathetic outflow",
+        "quiet corrected: central alpha2 -> sympathetic withdrawal -> reduced lipolysis; alpha2 dry mouth is the most common label AE (Catapres FDA label)"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "sympathetic",
+          "sign": "-",
+          "peak": 0.5385
+        },
+        {
+          "module": "contractility",
+          "sign": "-",
+          "peak": 0.43
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "contractility",
+        "hrv",
+        "micturition",
+        "peripheral_perfusion",
+        "preload",
+        "sympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_metformin_ampk",
+      "refs": [
+        "Rena 2017 Diabetologia 60:1577: metformin activates AMPK (mechanism review)",
+        "FDA label: Glucophage (metformin HCl), DailyMed — boxed warning: lactic acidosis",
+        "Owen et al., Biochem J 2000:348:607 — mitochondrial complex I inhibition reduces oxidative phosphorylation; hepatic lactate accumulation",
+        "Madiraju et al., Nature 2014:510:542 — mitochondrial GPD2 inhibition",
+        "quiet corrected: GI intolerance incl. nausea is the most common metformin AE (Glucophage FDA label); drug_exposure drives CTZ for all chemicals"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "ampk",
+          "sign": "+",
+          "peak": 1.1324
+        },
+        {
+          "module": "oxidation",
+          "sign": "-",
+          "peak": 0.1939
+        },
+        {
+          "module": "lactate",
+          "sign": "+",
+          "peak": 1.2357
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "ampk",
+        "atp_demand",
+        "gluconeogenesis",
+        "insulin_resistance",
+        "lactate",
+        "oxidation"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_empagliflozin_sglt2",
+      "refs": [
+        "IUPHAR/BPS: SGLT2 inhibitor, empagliflozin",
+        "FDA label: Jardiance (empagliflozin), DailyMed",
+        "Nauck 2014: glucosuria-driven osmotic diuresis",
+        "quiet corrected: SGLT2 inhibitors increase lipolysis/ketogenesis (Jardiance label: euglycemic ketoacidosis warning)"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "urine_output",
+          "sign": "+",
+          "peak": 0.328
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "renal_reabsorption",
+        "sodium_load",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_levothyroxine_replacement",
+      "refs": [
+        "FDA label: Synthroid (levothyroxine sodium), DailyMed",
+        "Guyton & Hall 14e ch.77: T4 raises thyroid axis activity, TSH falls via feedback"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "thyroid",
+          "sign": "+",
+          "peak": 0.5171
+        },
+        {
+          "module": "tsh",
+          "sign": "-",
+          "peak": 0.1488
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "insulin_resistance",
+        "lipogenesis",
+        "thyroid"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_prednisone_immunosuppression",
+      "refs": [
+        "IUPHAR/BPS: glucocorticoid receptor agonist, prednisone",
+        "FDA label: Deltasone (prednisone), DailyMed",
+        "Goodman & Gilman 14e ch.46: GR agonism represses NF-kB, induces gluconeogenesis"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "nfkb",
+          "sign": "-",
+          "peak": 0.6405
+        },
+        {
+          "module": "gluconeogenesis",
+          "sign": "+",
+          "peak": 0.1143
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [
+        "micturition"
+      ],
+      "anchors": [
+        "aldosterone",
+        "cortisol",
+        "enac",
+        "kaliuresis",
+        "nfkb",
+        "sodium_load",
+        "tcell",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_insulin_uptake",
+      "refs": [
+        "IUPHAR/BPS: insulin receptor agonist",
+        "Guyton & Hall 14e ch.79: insulin drives muscle glucose uptake and suppresses lipolysis"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "muscle_glucose_uptake",
+          "sign": "+",
+          "peak": 0.9415
+        },
+        {
+          "module": "lipolysis",
+          "sign": "-",
+          "peak": 0.7765
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "insulin_resistance",
+        "lipolysis",
+        "muscle_glucose_uptake"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_ibuprofen_cox",
+      "refs": [
+        "IUPHAR/BPS: nonselective COX inhibitor, ibuprofen",
+        "FDA label: Advil (ibuprofen), DailyMed",
+        "Vane 1971 Nat New Biol 231:232: NSAIDs inhibit prostaglandin synthesis"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "prostaglandin",
+          "sign": "-",
+          "peak": 0.8596
+        },
+        {
+          "module": "pyrogen",
+          "sign": "-",
+          "peak": 1.102
+        },
+        {
+          "module": "platelet",
+          "sign": "-",
+          "peak": 0.5014
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "airway_inflammation",
+        "coronary_flow",
+        "mucus",
+        "nfkb",
+        "platelet",
+        "prostaglandin",
+        "pulmonary_vr",
+        "pyrogen"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_tirzepatide_incretin",
+      "refs": [
+        "FDA label: Mounjaro (tirzepatide), DailyMed",
+        "Jastreboff 2022 NEJM 387:205: SURPASS-1, GIP/GLP-1 agonism reduces appetite and body weight",
+        "Open Targets: tirzepatide mechanism, GLP1R and GIPR agonist"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "satiety",
+          "sign": "+",
+          "peak": 0.8416
+        },
+        {
+          "module": "appetite",
+          "sign": "-",
+          "peak": 1.1581
+        },
+        {
+          "module": "motility",
+          "sign": "-",
+          "peak": 0.7837
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "appetite",
+        "insulin_resistance",
+        "motility",
+        "satiety"
+      ],
+      "outcome": {
+        "claimed": true,
+        "found": true
+      }
+    },
+    {
+      "id": "ext_hemorrhage_raas",
+      "refs": [
+        "Guyton & Hall 14e ch.24/29: hemorrhage triggers baroreceptor reflex, RAAS, ADH, water retention",
+        "BioGears Cardiovascular Methodology: hemorrhage validation scenario, biogearsengine.com"
+      ],
+      "n_expected": 8,
+      "hits": [
+        {
+          "module": "renin",
+          "sign": "+",
+          "peak": 0.5751
+        },
+        {
+          "module": "angiotensin",
+          "sign": "+",
+          "peak": 0.3294
+        },
+        {
+          "module": "aldosterone",
+          "sign": "+",
+          "peak": 0.1472
+        },
+        {
+          "module": "adh",
+          "sign": "+",
+          "peak": 0.5934
+        },
+        {
+          "module": "aqp2",
+          "sign": "+",
+          "peak": 0.3938
+        },
+        {
+          "module": "urine_output",
+          "sign": "-",
+          "peak": 0.1318
+        },
+        {
+          "module": "sympathetic",
+          "sign": "+",
+          "peak": 0.3236
+        },
+        {
+          "module": "preload",
+          "sign": "-",
+          "peak": 0.5284
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_salt_load_adh",
+      "refs": [
+        "Guyton & Hall 14e ch.29: hypernatremia raises osmolality, ADH secretion, renal water retention",
+        "quiet corrected: scenario includes a meal channel; postprandial satiety/insulin suppresses lipolysis"
+      ],
+      "n_expected": 4,
+      "hits": [
+        {
+          "module": "sodium_load",
+          "sign": "+",
+          "peak": 0.9492
+        },
+        {
+          "module": "osmotic_drive",
+          "sign": "+",
+          "peak": 0.4226
+        },
+        {
+          "module": "adh",
+          "sign": "+",
+          "peak": 0.2493
+        },
+        {
+          "module": "urine_output",
+          "sign": "-",
+          "peak": 0.0822
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_water_deprivation",
+      "refs": [
+        "Guyton & Hall 14e ch.29: dehydration concentrates plasma, ADH and renin conserve volume"
+      ],
+      "n_expected": 4,
+      "hits": [
+        {
+          "module": "osmotic_drive",
+          "sign": "+",
+          "peak": 0.4463
+        },
+        {
+          "module": "adh",
+          "sign": "+",
+          "peak": 0.4205
+        },
+        {
+          "module": "urine_output",
+          "sign": "-",
+          "peak": 0.1409
+        },
+        {
+          "module": "renin",
+          "sign": "+",
+          "peak": 0.478
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_cold_thermogenesis",
+      "refs": [
+        "Cannon & Nedergaard 2004 Physiol Rev 84:277: cold activates sympathetic drive, BAT thermogenesis, shivering",
+        "BioGears Environment Methodology: cold exposure response",
+        "quiet corrected: cold diuresis — peripheral vasoconstriction shifts volume centrally, raises ANP (Guyton ch.30)"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "sympathetic",
+          "sign": "+",
+          "peak": 0.2003
+        },
+        {
+          "module": "browning",
+          "sign": "+",
+          "peak": 0.3172
+        },
+        {
+          "module": "shivering",
+          "sign": "+",
+          "peak": 0.4954
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_hypoxia_drive",
+      "refs": [
+        "West & Luks, Respiratory Physiology 10e ch.9: hypoxia raises ventilatory drive, HPV, delayed EPO rise",
+        "BioGears hypoxemia validation scenario"
+      ],
+      "n_expected": 5,
+      "hits": [
+        {
+          "module": "hypoxic_drive",
+          "sign": "+",
+          "peak": 0.8321
+        },
+        {
+          "module": "ventilation",
+          "sign": "+",
+          "peak": 0.272
+        },
+        {
+          "module": "epo",
+          "sign": "+",
+          "peak": 0.8063
+        },
+        {
+          "module": "pulmonary_vr",
+          "sign": "+",
+          "peak": 0.8223
+        },
+        {
+          "module": "oxygen_deficit",
+          "sign": "+",
+          "peak": 0.8871
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_exercise_metabolic",
+      "refs": [
+        "Hargreaves & Spriet 2020 Nat Metab 2:817: exercise raises ATP demand, AMPK, lactate, glucose uptake",
+        "Guyton & Hall 14e ch.84: sympathetic drive and venous return during exercise"
+      ],
+      "n_expected": 7,
+      "hits": [
+        {
+          "module": "atp_demand",
+          "sign": "+",
+          "peak": 1.2579
+        },
+        {
+          "module": "ampk",
+          "sign": "+",
+          "peak": 0.6693
+        },
+        {
+          "module": "lactate",
+          "sign": "+",
+          "peak": 0.6309
+        },
+        {
+          "module": "muscle_glucose_uptake",
+          "sign": "+",
+          "peak": 0.8702
+        },
+        {
+          "module": "ventilation",
+          "sign": "+",
+          "peak": 0.9975
+        },
+        {
+          "module": "sympathetic",
+          "sign": "+",
+          "peak": 0.8811
+        },
+        {
+          "module": "venous_return",
+          "sign": "+",
+          "peak": 0.6319
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_sleep_deprivation_adenosine",
+      "refs": [
+        "Porkka-Heiskanen 1997 Science 276:1265: adenosine accumulates with wakefulness, homeostatic sleep pressure",
+        "Borbely 1982 Hum Neurobiol 1:195: two-process model, process S rises with deprivation"
+      ],
+      "n_expected": 4,
+      "hits": [
+        {
+          "module": "adenosine",
+          "sign": "+",
+          "peak": 0.3401
+        },
+        {
+          "module": "sleep_pressure",
+          "sign": "+",
+          "peak": 0.9232
+        },
+        {
+          "module": "mental_fatigue",
+          "sign": "+",
+          "peak": 0.5025
+        },
+        {
+          "module": "arousal",
+          "sign": "-",
+          "peak": 0.7881
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [
+        "urine_output"
+      ],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_fasting_catabolism",
+      "refs": [
+        "Cahill 2006 Annu Rev Nutr 26:1: fasting raises lipolysis, ketogenesis, glucagon",
+        "Cummings 2001 J Clin Endocrinol Metab 86:4075: ghrelin rises preprandially and during fasting"
+      ],
+      "n_expected": 5,
+      "hits": [
+        {
+          "module": "lipolysis",
+          "sign": "+",
+          "peak": 0.3288
+        },
+        {
+          "module": "ketogenesis",
+          "sign": "+",
+          "peak": 0.468
+        },
+        {
+          "module": "glucagon",
+          "sign": "+",
+          "peak": 0.2932
+        },
+        {
+          "module": "ghrelin",
+          "sign": "+",
+          "peak": 0.6531
+        },
+        {
+          "module": "muscle_glucose_uptake",
+          "sign": "-",
+          "peak": 0.0441
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_meal_postprandial",
+      "refs": [
+        "Cummings 2001: ghrelin suppressed after meals",
+        "Guyton & Hall 14e ch.66/72: postprandial satiety, motility, LPL-mediated fat storage"
+      ],
+      "n_expected": 5,
+      "hits": [
+        {
+          "module": "satiety",
+          "sign": "+",
+          "peak": 1.1554
+        },
+        {
+          "module": "ghrelin",
+          "sign": "-",
+          "peak": 0.6577
+        },
+        {
+          "module": "lpl",
+          "sign": "+",
+          "peak": 0.1334
+        },
+        {
+          "module": "motility",
+          "sign": "+",
+          "peak": 0.4135
+        },
+        {
+          "module": "leptin",
+          "sign": "+",
+          "peak": 0.2169
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_infection_innate",
+      "refs": [
+        "Medzhitov 2008 Nature 454:428: innate immunity triggers TNF/IL-6 cytokine cascade",
+        "Guyton & Hall 14e ch.74: pyrogens raise hypothalamic setpoint via preoptic area",
+        "quiet corrected: cytokine/catecholamine-driven lipolysis is documented in acute infection/sepsis"
+      ],
+      "n_expected": 5,
+      "hits": [
+        {
+          "module": "tnf",
+          "sign": "+",
+          "peak": 0.6255
+        },
+        {
+          "module": "il6",
+          "sign": "+",
+          "peak": 0.541
+        },
+        {
+          "module": "pyrogen",
+          "sign": "+",
+          "peak": 1.0024
+        },
+        {
+          "module": "preoptic",
+          "sign": "+",
+          "peak": 0.2621
+        },
+        {
+          "module": "crp",
+          "sign": "+",
+          "peak": 0.5086
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_heat_thermoregulation",
+      "refs": [
+        "Guyton & Hall 14e ch.74: heat drives sweating and cutaneous vasodilation",
+        "BioGears Environment Methodology: heat exposure validation"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "sweat",
+          "sign": "+",
+          "peak": 0.2963
+        },
+        {
+          "module": "skin_bloodflow",
+          "sign": "+",
+          "peak": 0.1979
+        },
+        {
+          "module": "orthostatic_stress",
+          "sign": "+",
+          "peak": 0.0539
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [
+        "browning"
+      ],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ext_uv_vitamin_d",
+      "refs": [
+        "Holick 2007 NEJM 357:266: cutaneous vitamin D synthesis under UVB",
+        "Guyton & Hall 14e: UV skin damage response"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "vitamin_d_synthesis",
+          "sign": "+",
+          "peak": 0.1866
+        },
+        {
+          "module": "uv_damage",
+          "sign": "+",
+          "peak": 0.2705
+        },
+        {
+          "module": "skin_damage",
+          "sign": "+",
+          "peak": 0.1935
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    }
+  ]
+}

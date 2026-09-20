@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model id="topp_2000_pmr">
+    <listOfParameters>
+      <parameter id="G" value="600" constant="false"/>
+      <parameter id="R0" value="846" constant="true"/>
+      <parameter id="SI" value="0.72" constant="true"/>
+      <parameter id="EG0" value="1.44" constant="true"/>
+      <parameter id="I" value="0" constant="false"/>
+      <parameter id="alpha" value="2000" constant="true"/>
+      <parameter id="sigma" value="43.2" constant="true"/>
+      <parameter id="k" value="432" constant="true"/>
+      <parameter id="beta" value="0" constant="false"/>
+      <parameter id="d0" value="0.06" constant="true"/>
+      <parameter id="r1" value="0.00084" constant="true"/>
+      <parameter id="r2" value="2.4e-06" constant="true"/>
+    </listOfParameters>
+    <listOfRules>
+      <rateRule variable="G">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <minus/>
+            <ci> R0 </ci>
+            <apply>
+              <times/>
+              <apply>
+                <plus/>
+                <ci> EG0 </ci>
+                <apply>
+                  <times/>
+                  <ci> SI </ci>
+                  <ci> I </ci>
+                </apply>
+              </apply>
+              <ci> G </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="I">
+        <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:sbml="http://www.sbml.org/sbml/level3/version2/core">
+          <apply>
+            <minus/>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <apply>
+                  <divide/>
+                  <ci> beta </ci>
+                  <cn sbml:units="mg"> 1 </cn>
+                </apply>
+                <ci> sigma </ci>
+                <apply>
+                  <power/>
+                  <ci> G </ci>
+                  <cn sbml:units="dimensionless"> 2 </cn>
+                </apply>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> alpha </ci>
+                <apply>
+                  <power/>
+                  <ci> G </ci>
+                  <cn sbml:units="dimensionless"> 2 </cn>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <times/>
+              <ci> k </ci>
+              <ci> I </ci>
+            </apply>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="beta">
+        <math xmlns="http://www.w3.org/1998/Math/MathML" xmlns:sbml="http://www.sbml.org/sbml/level3/version2/core">
+          <apply>
+            <times/>
+            <apply>
+              <plus/>
+              <apply>
+                <times/>
+                <ci> r1 </ci>
+                <ci> G </ci>
+              </apply>
+              <apply>
+                <minus/>
+                <ci> d0 </ci>
+              </apply>
+              <apply>
+                <times/>
+                <apply>
+                  <minus/>
+                  <ci> r2 </ci>
+                </apply>
+                <apply>
+                  <power/>
+                  <ci> G </ci>
+                  <cn sbml:units="dimensionless"> 2 </cn>
+                </apply>
+              </apply>
+            </apply>
+            <ci> beta </ci>
+          </apply>
+        </math>
+      </rateRule>
+    </listOfRules>
+  </model>
+</sbml>

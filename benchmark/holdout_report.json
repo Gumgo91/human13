@@ -1,0 +1,835 @@
+{
+  "benchmark": "external, literature-curated (not fitted to the model)",
+  "n_scenarios": 30,
+  "module_recall": 1.0,
+  "misses_by_reason": {},
+  "quiet_violations": 0,
+  "outcome_paths": {
+    "claimed": 0,
+    "found": 0
+  },
+  "unresolved_entities": [
+    "heparin"
+  ],
+  "results": [
+    {
+      "id": "ho_amlodipine_ccb",
+      "refs": [
+        "Norvasc FDA label: dihydropyridine CCB -> peripheral vasodilation"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "peripheral_perfusion",
+          "sign": "+",
+          "peak": 0.7749
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "contractility",
+        "micturition",
+        "peripheral_perfusion",
+        "preload"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_montelukast_cyslt1",
+      "refs": [
+        "Singulair FDA label: CysLT1 antagonist -> bronchodilation in asthma"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "airway",
+          "sign": "-",
+          "peak": 0.2425
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "adenosine",
+        "airway_inflammation",
+        "arousal",
+        "mucus",
+        "sympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_sumatriptan_triptan",
+      "refs": [
+        "Imitrex FDA label: 5-HT1B/1D agonist -> migraine relief"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "headache",
+          "sign": "-",
+          "peak": 0.781
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "emetic_drive",
+        "headache"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_atorvastatin_hmgcr",
+      "refs": [
+        "Lipitor FDA label: HMG-CoA reductase inhibitor"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "cholesterol_syn",
+          "sign": "-",
+          "peak": 0.205
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "cholesterol_syn",
+        "vldl"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_propranolol_beta",
+      "refs": [
+        "Inderal FDA label: nonselective beta-blocker; boxed warning for bronchospasm"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "contractility",
+          "sign": "-",
+          "peak": 0.7443
+        },
+        {
+          "module": "airway",
+          "sign": "+",
+          "peak": 0.7645
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "airway",
+        "contractility",
+        "hrv",
+        "lipolysis"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_morphine_opioid",
+      "refs": [
+        "Morphine label: mu-agonist -> respiratory depression, constipation, analgesia"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "ventilation",
+          "sign": "-",
+          "peak": 0.4061
+        },
+        {
+          "module": "motility",
+          "sign": "-",
+          "peak": 0.5196
+        },
+        {
+          "module": "pain",
+          "sign": "-",
+          "peak": 0.8233
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "gi_fluid_loss",
+        "motility",
+        "pain",
+        "parasympathetic",
+        "ventilation"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_naloxone_reversal",
+      "refs": [
+        "Narcan FDA label: mu-opioid antagonist reverses analgesia"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "pain",
+          "sign": "+",
+          "peak": 0.8283
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "gi_fluid_loss",
+        "motility",
+        "pain",
+        "parasympathetic",
+        "ventilation"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_levothyroxine_thyroid",
+      "refs": [
+        "Synthroid FDA label: T4 replacement raises thyroid axis"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "thyroid",
+          "sign": "+",
+          "peak": 0.1195
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "insulin_resistance",
+        "lipogenesis",
+        "thyroid"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_heparin_anticoag",
+      "refs": [
+        "Heparin label: antithrombin III potentiation -> anticoagulation"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "anticoagulant",
+          "sign": "+",
+          "peak": 0.4243
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "anticoagulant",
+        "thrombin"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_ondansetron_antiemetic",
+      "refs": [
+        "Zofran FDA label: 5-HT3 antagonist -> antiemesis"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "emetic_drive",
+          "sign": "-",
+          "peak": 0.6189
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "emetic_drive",
+        "parasympathetic",
+        "ventilation"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_furosemide_loop",
+      "refs": [
+        "Lasix FDA label: NKCC2 inhibition -> diuresis and potassium wasting"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "urine_output",
+          "sign": "+",
+          "peak": 0.741
+        },
+        {
+          "module": "k_depletion",
+          "sign": "+",
+          "peak": 0.3586
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "adenosine",
+        "arousal",
+        "bicarbonate",
+        "cortisol",
+        "k_depletion",
+        "sodium_load",
+        "sympathetic",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_spironolactone_ksparing",
+      "refs": [
+        "Aldactone FDA label: MR antagonist -> diuresis with K retention"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "urine_output",
+          "sign": "+",
+          "peak": 0.4932
+        },
+        {
+          "module": "k_depletion",
+          "sign": "-",
+          "peak": 0.2936
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "aldosterone",
+        "cortisol",
+        "enac",
+        "epo",
+        "gonadal_steroid",
+        "gonadotropin",
+        "kaliuresis",
+        "nfkb",
+        "resorption",
+        "sodium_load",
+        "tcell",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_losartan_arb",
+      "refs": [
+        "Cozaar FDA label: AT1 antagonist -> less aldosterone, vasodilation"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "aldosterone",
+          "sign": "-",
+          "peak": 0.6798
+        },
+        {
+          "module": "peripheral_perfusion",
+          "sign": "+",
+          "peak": 0.7651
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "aldosterone",
+        "peripheral_perfusion"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_metoprolol_beta1",
+      "refs": [
+        "Lopressor FDA label: beta1-selective blocker -> negative inotropy"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "contractility",
+          "sign": "-",
+          "peak": 0.7651
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "airway",
+        "contractility",
+        "hrv",
+        "lipolysis"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_donepezil_ache",
+      "refs": [
+        "Aricept FDA label: acetylcholinesterase inhibitor -> cholinergic tone up"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "parasympathetic",
+          "sign": "+",
+          "peak": 0.6971
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "cognitive_load",
+        "parasympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_orlistat_lipase",
+      "refs": [
+        "Xenical FDA label: pancreatic lipase inhibitor -> steatorrhea/oily stool"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "lipase",
+          "sign": "-",
+          "peak": 0.781
+        },
+        {
+          "module": "gi_fluid_loss",
+          "sign": "+",
+          "peak": 0.3184
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "appetite",
+        "arousal",
+        "dopamine_reward",
+        "gi_fluid_loss",
+        "lipase",
+        "macrophage",
+        "pain",
+        "resolution"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_acetazolamide_ca",
+      "refs": [
+        "Diamox FDA label: carbonic anhydrase inhibitor -> diuresis"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "urine_output",
+          "sign": "+",
+          "peak": 0.7411
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "bicarbonate",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_caffeine_adenosine",
+      "refs": [
+        "Fredholm 1999 Pharmacol Rev: adenosine antagonist -> wakefulness"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "arousal",
+          "sign": "+",
+          "peak": 0.3612
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "adenosine",
+        "airway_inflammation",
+        "arousal",
+        "nfkb",
+        "sympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_nicotine_symp",
+      "refs": [
+        "Benowitz 2009 CPT: nAChR agonist -> sympathoexcitation"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "sympathetic",
+          "sign": "+",
+          "peak": 0.5501
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "parasympathetic",
+        "sympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_gabapentin_a2d",
+      "refs": [
+        "Neurontin FDA label: alpha2delta ligand -> neuropathic pain relief"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "pain",
+          "sign": "-",
+          "peak": 0.5876
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "contractility",
+        "pain",
+        "peripheral_perfusion"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_celecoxib_cox2",
+      "refs": [
+        "Celebrex FDA label: COX-2 selective inhibitor -> prostaglandin reduction"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "prostaglandin",
+          "sign": "-",
+          "peak": 1.1678
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "coronary_flow",
+        "nfkb",
+        "platelet",
+        "prostaglandin",
+        "pulmonary_vr",
+        "pyrogen"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_rosiglitazone_pparg",
+      "refs": [
+        "Avandia FDA label: PPAR-gamma agonist -> insulin sensitization"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "insulin_resistance",
+          "sign": "-",
+          "peak": 0.4758
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "insulin_resistance",
+        "lipogenesis",
+        "lipolysis",
+        "vldl"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_carvedilol_beta_alpha",
+      "refs": [
+        "Coreg FDA label: nonselective beta + alpha1 blocker"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "contractility",
+          "sign": "-",
+          "peak": 0.5439
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arrhythmia_risk",
+        "contractility",
+        "hrv"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_sotalol_herg",
+      "refs": [
+        "Betapace FDA label boxed warning: hERG/K channel blockade -> proarrhythmia (torsades)"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "arrhythmia_risk",
+          "sign": "+",
+          "peak": 0.8207
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "airway",
+        "arrhythmia_risk",
+        "contractility",
+        "hrv",
+        "lipolysis"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_aprepitant_nk1",
+      "refs": [
+        "Emend FDA label: NK1 antagonist -> antiemesis"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "emetic_drive",
+          "sign": "-",
+          "peak": 0.5921
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "emetic_drive"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_ezetimibe_npc1l1",
+      "refs": [
+        "Zetia FDA label: NPC1L1 inhibitor -> less intestinal cholesterol absorption"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "cholesterol_syn",
+          "sign": "-",
+          "peak": 0.2359
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "cholesterol_syn"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_desmopressin_v2",
+      "refs": [
+        "DDAVP FDA label: V2 agonist -> AQP2 insertion, water retention, antidiuresis"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "urine_output",
+          "sign": "-",
+          "peak": 0.3552
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "adh",
+        "aqp2",
+        "milk_production",
+        "oxytocin"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_tramadol_opioid_sert",
+      "refs": [
+        "Ultram FDA label: mu agonist + SERT/NET inhibition -> analgesia"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "pain",
+          "sign": "-",
+          "peak": 0.2963
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "emetic_drive",
+        "gi_fluid_loss",
+        "motility",
+        "pain",
+        "parasympathetic",
+        "serotonin_tone",
+        "ventilation"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_diphenhydramine_sedation",
+      "refs": [
+        "Benadryl FDA label: H1 + antimuscarinic -> sedation/drowsiness"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "arousal",
+          "sign": "-",
+          "peak": 0.5233
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "appetite",
+        "arousal",
+        "arrhythmia_risk",
+        "histamine",
+        "parasympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "ho_midodrine_alpha1",
+      "refs": [
+        "ProAmatine FDA label: alpha1 agonist -> vasoconstriction, raises BP"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "peripheral_perfusion",
+          "sign": "-",
+          "peak": 0.6825
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "micturition",
+        "peripheral_perfusion",
+        "preload"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    }
+  ]
+}

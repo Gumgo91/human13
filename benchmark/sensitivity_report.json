@@ -1,0 +1,232 @@
+{
+  "question": "do qualitative causal judgments survive PK perturbation?",
+  "n_scenarios": 5,
+  "n_judgments": 56,
+  "n_preserved": 56,
+  "judgment_stability": 1.0,
+  "scenarios": [
+    {
+      "id": "warfarin",
+      "baseline": {
+        "thrombin": {
+          "ok": true,
+          "peak": 1.1186
+        },
+        "anticoagulant": {
+          "ok": true,
+          "peak": 1.0404
+        }
+      },
+      "perturbations": {
+        "dose_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "dose_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "vd_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "vd_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "t12_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "t12_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "worst_cmax_low": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "worst_cmax_high": {
+          "flips": {},
+          "n_flip": 0
+        }
+      }
+    },
+    {
+      "id": "ibuprofen",
+      "baseline": {
+        "prostaglandin": {
+          "ok": true,
+          "peak": 1.0168
+        }
+      },
+      "perturbations": {
+        "dose_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "dose_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "vd_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "vd_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "t12_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "t12_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "worst_cmax_low": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "worst_cmax_high": {
+          "flips": {},
+          "n_flip": 0
+        }
+      }
+    },
+    {
+      "id": "metformin",
+      "baseline": {
+        "ampk": {
+          "ok": true,
+          "peak": 0.6231
+        },
+        "gluconeogenesis": {
+          "ok": true,
+          "peak": 0.3265
+        }
+      },
+      "perturbations": {
+        "dose_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "dose_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "vd_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "vd_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "t12_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "t12_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "worst_cmax_low": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "worst_cmax_high": {
+          "flips": {},
+          "n_flip": 0
+        }
+      }
+    },
+    {
+      "id": "sildenafil",
+      "baseline": {
+        "peripheral_perfusion": {
+          "ok": true,
+          "peak": 0.1499
+        }
+      },
+      "perturbations": {
+        "dose_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "dose_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "vd_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "vd_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "t12_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "t12_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "worst_cmax_low": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "worst_cmax_high": {
+          "flips": {},
+          "n_flip": 0
+        }
+      }
+    },
+    {
+      "id": "furosemide",
+      "baseline": {
+        "urine_output": {
+          "ok": true,
+          "peak": 0.5835
+        }
+      },
+      "perturbations": {
+        "dose_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "dose_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "vd_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "vd_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "t12_x0.5": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "t12_x2": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "worst_cmax_low": {
+          "flips": {},
+          "n_flip": 0
+        },
+        "worst_cmax_high": {
+          "flips": {},
+          "n_flip": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2131 @@
+{
+  "n_scenarios": 73,
+  "module_recall": 1.0,
+  "quiet_violations": 0,
+  "outcome_paths": {
+    "claimed": 1,
+    "found": 1
+  },
+  "errors": [],
+  "results": [
+    {
+      "id": "exercise_aerobic",
+      "n_expected": 7,
+      "hits": 7,
+      "hit_detail": [
+        {
+          "module": "atp_demand",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.8116
+        },
+        {
+          "module": "ampk",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.4177
+        },
+        {
+          "module": "lactate",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.4115
+        },
+        {
+          "module": "ventilation",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.6186
+        },
+        {
+          "module": "sympathetic",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.5067
+        },
+        {
+          "module": "fatigue",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3712
+        },
+        {
+          "module": "muscle_glucose_uptake",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.5202
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "acute_stress",
+      "n_expected": 5,
+      "hits": 5,
+      "hit_detail": [
+        {
+          "module": "crh",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.7405
+        },
+        {
+          "module": "acth",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3733
+        },
+        {
+          "module": "cortisol",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1639
+        },
+        {
+          "module": "sympathetic",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.7673
+        },
+        {
+          "module": "catecholamine",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.4049
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "sleep_deprivation",
+      "n_expected": 5,
+      "hits": 5,
+      "hit_detail": [
+        {
+          "module": "sleep_pressure",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2187
+        },
+        {
+          "module": "adenosine",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.0537
+        },
+        {
+          "module": "arousal",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.1757
+        },
+        {
+          "module": "cognitive_load",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.1038
+        },
+        {
+          "module": "mental_fatigue",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2022
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "sauna_heat",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "thermosensor",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.4951
+        },
+        {
+          "module": "sweat",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2933
+        },
+        {
+          "module": "skin_bloodflow",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1887
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "cold_water",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "shivering",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.4954
+        },
+        {
+          "module": "sympathetic",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2003
+        },
+        {
+          "module": "skin_bloodflow",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.1515
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "infection",
+      "n_expected": 6,
+      "hits": 6,
+      "hit_detail": [
+        {
+          "module": "nfkb",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.831
+        },
+        {
+          "module": "il6",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2723
+        },
+        {
+          "module": "crp",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.134
+        },
+        {
+          "module": "neutrophil",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.5192
+        },
+        {
+          "module": "pyrogen",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3899
+        },
+        {
+          "module": "interferon",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3427
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "hemorrhage",
+      "n_expected": 4,
+      "hits": 4,
+      "hit_detail": [
+        {
+          "module": "preload",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.42
+        },
+        {
+          "module": "renin",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3355
+        },
+        {
+          "module": "adh",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3766
+        },
+        {
+          "module": "sympathetic",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3236
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "transfusion",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "plasma_vol",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1933
+        },
+        {
+          "module": "preload",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.0639
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "vaccination",
+      "n_expected": 4,
+      "hits": 4,
+      "hit_detail": [
+        {
+          "module": "dendritic",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1772
+        },
+        {
+          "module": "tcell",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.0781
+        },
+        {
+          "module": "bcell",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.0526
+        },
+        {
+          "module": "il6",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.079
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "altitude_hypoxia",
+      "n_expected": 4,
+      "hits": 4,
+      "hit_detail": [
+        {
+          "module": "oxygen_deficit",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.8853
+        },
+        {
+          "module": "hypoxic_drive",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.8308
+        },
+        {
+          "module": "ventilation",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.272
+        },
+        {
+          "module": "epo",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3055
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "apnea",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "co2_load",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2122
+        },
+        {
+          "module": "oxygen_deficit",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3145
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "dehydration",
+      "n_expected": 4,
+      "hits": 4,
+      "hit_detail": [
+        {
+          "module": "adh",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.192
+        },
+        {
+          "module": "urine_output",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.0415
+        },
+        {
+          "module": "osmotic_drive",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2906
+        },
+        {
+          "module": "preload",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.0951
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "meal",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "satiety",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.5092
+        },
+        {
+          "module": "ghrelin",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.2155
+        },
+        {
+          "module": "splanchnic_flow",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.5622
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "salty_meal",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "sodium_load",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.6099
+        },
+        {
+          "module": "osmotic_drive",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2001
+        },
+        {
+          "module": "adh",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1046
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "protein_meal",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "urea_cycle",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1404
+        },
+        {
+          "module": "satiety",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3215
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "fiber_meal",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "scfa",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.0761
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "fasting",
+      "n_expected": 4,
+      "hits": 4,
+      "hit_detail": [
+        {
+          "module": "ghrelin",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2912
+        },
+        {
+          "module": "lipolysis",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1855
+        },
+        {
+          "module": "ketogenesis",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1008
+        },
+        {
+          "module": "glucagon",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2088
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "vomiting",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "gi_fluid_loss",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.4346
+        },
+        {
+          "module": "emetic_drive",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.4708
+        },
+        {
+          "module": "adh",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1622
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "diarrhea",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "gi_fluid_loss",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.494
+        },
+        {
+          "module": "preload",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.0239
+        },
+        {
+          "module": "adh",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1883
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "smoking",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "airway",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1924
+        },
+        {
+          "module": "mucus",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2183
+        },
+        {
+          "module": "sympathetic",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1613
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "uv_exposure",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "uv_damage",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1521
+        },
+        {
+          "module": "vitamin_d_synthesis",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1032
+        },
+        {
+          "module": "calcitriol",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.0201
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "orthostasis",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "orthostatic_stress",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.4472
+        },
+        {
+          "module": "baroreceptor",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.0663
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "menstrual",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "menstrual_flow",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.0319
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "pregnancy",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "plasma_vol",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1943
+        },
+        {
+          "module": "gonadal_steroid",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.0878
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "lactation",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "milk_production",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.0978
+        },
+        {
+          "module": "prolactin",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2881
+        },
+        {
+          "module": "oxytocin",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.189
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "meditation",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "parasympathetic",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.4436
+        },
+        {
+          "module": "sympathetic",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.2267
+        },
+        {
+          "module": "cortisol",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.0341
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "cognitive_load",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "cognitive_load",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.7457
+        },
+        {
+          "module": "cerebral_metabolism",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3545
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "darkness",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "melatonin",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2275
+        },
+        {
+          "module": "retinal_light",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.7796
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "jetlag",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "phase_mismatch",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1134
+        },
+        {
+          "module": "sleep_quality",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.0268
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "injury_pain",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "pain",
+          "want": "+",
+          "sign": "+",
+          "peak": 1.3351
+        },
+        {
+          "module": "sympathetic",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3823
+        },
+        {
+          "module": "wound_repair",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.0471
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "allergen",
+      "n_expected": 4,
+      "hits": 4,
+      "hit_detail": [
+        {
+          "module": "histamine",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.7177
+        },
+        {
+          "module": "ige",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1521
+        },
+        {
+          "module": "pruritus",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.6236
+        },
+        {
+          "module": "airway_inflammation",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2019
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "asthma",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "airway",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.431
+        },
+        {
+          "module": "airway_inflammation",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1935
+        },
+        {
+          "module": "mucus",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.0382
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "ibuprofen_400",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "prostaglandin",
+          "want": "-",
+          "sign": "-",
+          "peak": 1.0168
+        },
+        {
+          "module": "pyrogen",
+          "want": "-",
+          "sign": "-",
+          "peak": 1.3773
+        },
+        {
+          "module": "platelet",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.6439
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 9,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "tirzepatide_weightloss",
+      "n_expected": 4,
+      "hits": 4,
+      "hit_detail": [
+        {
+          "module": "satiety",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.5627
+        },
+        {
+          "module": "appetite",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.7462
+        },
+        {
+          "module": "motility",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.5587
+        },
+        {
+          "module": "lipolysis",
+          "want": "?",
+          "sign": "-",
+          "peak": 0.0205
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": true,
+        "found": true
+      },
+      "anchors": 4,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "caffeine",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "adenosine",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.401
+        },
+        {
+          "module": "arousal",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.6903
+        },
+        {
+          "module": "sympathetic",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1782
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 5,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "alcohol",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "arousal",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.5556
+        },
+        {
+          "module": "adh",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.4802
+        },
+        {
+          "module": "hepatic_load",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.67
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 10,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "nicotine",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "sympathetic",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3882
+        },
+        {
+          "module": "dopamine_reward",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2721
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 3,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "albuterol",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "airway",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.5842
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 2,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "propranolol",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "contractility",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.3483
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 4,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "metformin",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "ampk",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.8569
+        },
+        {
+          "module": "insulin_resistance",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.0977
+        },
+        {
+          "module": "gluconeogenesis",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.0872
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 6,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "atorvastatin",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "cholesterol_syn",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.2801
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 2,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "furosemide",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "urine_output",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.5526
+        },
+        {
+          "module": "sodium_load",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.5152
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 8,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "omeprazole",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "gastric_acid",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.4901
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 1,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "sertraline",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "serotonin_tone",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.374
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 6,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "morphine",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "pain",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.6106
+        },
+        {
+          "module": "ventilation",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.3973
+        },
+        {
+          "module": "motility",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.4872
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 5,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "prednisone",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "nfkb",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.4436
+        },
+        {
+          "module": "tcell",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.3562
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 8,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "warfarin",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "thrombin",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.7249
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 4,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "lisinopril",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "angiotensin",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.5278
+        },
+        {
+          "module": "aldosterone",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.6814
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 2,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "diphenhydramine",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "histamine",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.5585
+        },
+        {
+          "module": "arousal",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.3755
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 5,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "levothyroxine",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "thyroid",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2978
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 3,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "sildenafil",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "pulmonary_vr",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.5498
+        },
+        {
+          "module": "peripheral_perfusion",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.0987
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 7,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "melatonin_supp",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "melatonin",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.4207
+        },
+        {
+          "module": "sleep_pressure",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1532
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 2,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "naloxone",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "ventilation",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.4154
+        },
+        {
+          "module": "motility",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.4811
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 5,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "epinephrine",
+      "n_expected": 3,
+      "hits": 3,
+      "hit_detail": [
+        {
+          "module": "contractility",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2317
+        },
+        {
+          "module": "airway",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.0537
+        },
+        {
+          "module": "peripheral_perfusion",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.073
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 9,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "antacid",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "gastric_acid",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.4901
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 1,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "insulin_inj",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "muscle_glucose_uptake",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.6042
+        },
+        {
+          "module": "insulin_resistance",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.3588
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 3,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "gabapentin",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "pain",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.1642
+        },
+        {
+          "module": "arousal",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.0751
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 4,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "montelukast",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "airway_inflammation",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.4796
+        },
+        {
+          "module": "mucus",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.5123
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 5,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "losartan",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "aldosterone",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.4227
+        },
+        {
+          "module": "peripheral_perfusion",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.5641
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 2,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "clopidogrel",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "platelet",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.5447
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 1,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "teriparatide",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "formation",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.2456
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 2,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "finasteride",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "gonadal_steroid",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.3207
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 1,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "tramadol",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "pain",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.6106
+        },
+        {
+          "module": "serotonin_tone",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3278
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 7,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "allopurinol",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "acid_load",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.4045
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 2,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "ondansetron",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "emetic_drive",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.4349
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 7,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "desmopressin",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "aqp2",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.5738
+        },
+        {
+          "module": "urine_output",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.2788
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 4,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "amoxicillin",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "nfkb",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.4863
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 2,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "testosterone_inj",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "gonadal_steroid",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.3207
+        },
+        {
+          "module": "epo",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.1991
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 2,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "loperamide",
+      "n_expected": 2,
+      "hits": 2,
+      "hit_detail": [
+        {
+          "module": "motility",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.4271
+        },
+        {
+          "module": "gi_fluid_loss",
+          "want": "-",
+          "sign": "-",
+          "peak": 0.2269
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 5,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "sacubitril",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "anp",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.5046
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 2,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "donepezil",
+      "n_expected": 1,
+      "hits": 1,
+      "hit_detail": [
+        {
+          "module": "parasympathetic",
+          "want": "+",
+          "sign": "+",
+          "peak": 0.5765
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 2,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "negated_stress",
+      "n_expected": 0,
+      "hits": 0,
+      "hit_detail": [],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    },
+    {
+      "id": "vague_unknown",
+      "n_expected": 0,
+      "hits": 0,
+      "hit_detail": [],
+      "misses": [],
+      "quiet_violations": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      },
+      "anchors": 0,
+      "engine_hash": "2286decd07f78d364c682c28e782c7b3395a137770261676d58c17bf008c5650"
+    }
+  ]
+}

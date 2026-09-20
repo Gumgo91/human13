@@ -1,0 +1,1060 @@
+{
+  "benchmark": "external, literature-curated (not fitted to the model)",
+  "n_scenarios": 33,
+  "module_recall": 0.9701,
+  "misses_by_reason": {
+    "propagation": 2
+  },
+  "quiet_violations": 2,
+  "outcome_paths": {
+    "claimed": 1,
+    "found": 1
+  },
+  "unresolved_entities": [
+    "filgrastim",
+    "pembrolizumab",
+    "vitamin d"
+  ],
+  "results": [
+    {
+      "id": "h2_aspirin_antiplatelet",
+      "refs": [
+        "Vane 1971 Nat New Biol (aspirin irreversibly inhibits platelet COX-1 -> TXA2 loss)",
+        "FDA aspirin label: antiplatelet"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "platelet",
+          "sign": "-",
+          "peak": 0.129
+        },
+        {
+          "module": "thrombin",
+          "sign": "-",
+          "peak": 0.068
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "coronary_flow",
+        "nfkb",
+        "platelet",
+        "prostaglandin",
+        "pulmonary_vr",
+        "pyrogen"
+      ],
+      "outcome": {
+        "claimed": true,
+        "found": true
+      }
+    },
+    {
+      "id": "h2_atenolol_beta1",
+      "refs": [
+        "G&G: atenolol is beta1-selective; negative inotropy/chronotropy without bronchospasm liability of nonselective blockers"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "contractility",
+          "sign": "-",
+          "peak": 0.7656
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [
+        "airway"
+      ],
+      "anchors": [
+        "airway",
+        "contractility",
+        "hrv",
+        "lipolysis"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_dabigatran_thrombin",
+      "refs": [
+        "Pradaxa label: direct thrombin inhibitor -> reduced fibrin generation"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "thrombin",
+          "sign": "-",
+          "peak": 0.7632
+        },
+        {
+          "module": "fibrin",
+          "sign": "-",
+          "peak": 0.2905
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "anticoagulant",
+        "fibrinolysis",
+        "thrombin"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_ticagrelor_p2y12",
+      "refs": [
+        "Brilinta label: P2Y12 antagonist -> platelet inhibition"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "platelet",
+          "sign": "-",
+          "peak": 0.8644
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "dopamine_reward",
+        "platelet"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_hctz_thiazide",
+      "refs": [
+        "G&G: NCC blockade -> natriuresis; volume contraction -> renin rise"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "urine_output",
+          "sign": "+",
+          "peak": 0.7304
+        },
+        {
+          "module": "sodium_load",
+          "sign": "-",
+          "peak": 0.7818
+        },
+        {
+          "module": "renin",
+          "sign": "+",
+          "peak": 0.2812
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "bicarbonate",
+        "sodium_load",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_fludrocortisone_mr",
+      "refs": [
+        "Florinef label: potent mineralocorticoid -> Na retention, K wasting, water retention"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "kaliuresis",
+          "sign": "+",
+          "peak": 1.0416
+        },
+        {
+          "module": "sodium_load",
+          "sign": "+",
+          "peak": 0.5271
+        },
+        {
+          "module": "urine_output",
+          "sign": "-",
+          "peak": 0.4466
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "aldosterone",
+        "cortisol",
+        "enac",
+        "kaliuresis",
+        "nfkb",
+        "sodium_load",
+        "tcell",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_dexamethasone_gc",
+      "refs": [
+        "G&G: dexamethasone is a potent glucocorticoid with negligible mineralocorticoid activity -> immunosuppression without Na retention"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "cortisol",
+          "sign": "+",
+          "peak": 0.6174
+        },
+        {
+          "module": "nfkb",
+          "sign": "-",
+          "peak": 0.6426
+        },
+        {
+          "module": "tcell",
+          "sign": "-",
+          "peak": 0.6287
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [
+        "sodium_load"
+      ],
+      "anchors": [
+        "airway_inflammation",
+        "cortisol",
+        "gi_fluid_loss",
+        "lipase",
+        "mucus",
+        "nfkb",
+        "tcell"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_filgrastim_gcsf",
+      "refs": [
+        "Neupogen label: G-CSF -> neutrophil production"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "neutrophil",
+          "sign": "+",
+          "peak": 0.687
+        },
+        {
+          "module": "leukocyte",
+          "sign": "+",
+          "peak": 0.6818
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "leukocyte",
+        "neutrophil"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_tacrolimus_calcineurin",
+      "refs": [
+        "Prograf label: calcineurin inhibitor -> T-cell suppression"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "tcell",
+          "sign": "-",
+          "peak": 0.65
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "tcell"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_pembrolizumab_pd1",
+      "refs": [
+        "Keytruda label: PD-1 blockade -> T-cell disinhibition"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "tcell",
+          "sign": "+",
+          "peak": 0.5717
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "tcell"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_venlafaxine_snri",
+      "refs": [
+        "Effexor label: SNRI; hyponatremia/SIADH is a documented class effect (ADH release)"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "serotonin_tone",
+          "sign": "+",
+          "peak": 0.6739
+        },
+        {
+          "module": "sympathetic",
+          "sign": "+",
+          "peak": 0.5392
+        },
+        {
+          "module": "adh",
+          "sign": "+",
+          "peak": 0.1884
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "dopamine_reward",
+        "emetic_drive",
+        "micturition",
+        "pain",
+        "peripheral_perfusion",
+        "preload",
+        "serotonin_tone",
+        "sympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_fentanyl_opioid",
+      "refs": [
+        "FDA fentanyl label: mu-opioid respiratory depression -> hypercapnia; analgesia"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "ventilation",
+          "sign": "-",
+          "peak": 0.6045
+        },
+        {
+          "module": "co2_load",
+          "sign": "+",
+          "peak": 0.4973
+        },
+        {
+          "module": "pain",
+          "sign": "-",
+          "peak": 0.8309
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "gi_fluid_loss",
+        "motility",
+        "pain",
+        "parasympathetic",
+        "ventilation"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_metoclopramide_d2",
+      "refs": [
+        "Reglan label: D2 antagonist -> prolactin release, antiemesis, prokinesis"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "prolactin",
+          "sign": "+",
+          "peak": 0.7189
+        },
+        {
+          "module": "emetic_drive",
+          "sign": "-",
+          "peak": 0.5753
+        },
+        {
+          "module": "motility",
+          "sign": "+",
+          "peak": 0.3503
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "cognitive_load",
+        "dopamine_reward",
+        "emetic_drive",
+        "micturition",
+        "motility",
+        "parasympathetic",
+        "peripheral_perfusion",
+        "preload",
+        "prolactin",
+        "sympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_alendronate_bone",
+      "refs": [
+        "Fosamax label: bisphosphonate -> osteoclast-mediated resorption suppression"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "resorption",
+          "sign": "-",
+          "peak": 0.4852
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "resorption"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_vitamind_calcitriol",
+      "refs": [
+        "Vitamin D -> hepatic 25-OH -> renal 1-alpha hydroxylation -> calcitriol"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "calcitriol",
+          "sign": "+",
+          "peak": 0.595
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "calcitriol"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_cetirizine_h1",
+      "refs": [
+        "Zyrtec label: H1 antagonist; sedation is a documented class effect"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "histamine",
+          "sign": "-",
+          "peak": 0.7807
+        },
+        {
+          "module": "arousal",
+          "sign": "-",
+          "peak": 0.517
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "appetite",
+        "arousal",
+        "arrhythmia_risk",
+        "histamine"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_propofol_gaba",
+      "refs": [
+        "Diprivan label: GABA-A agonism -> hypnosis and respiratory depression"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "arousal",
+          "sign": "-",
+          "peak": 0.7609
+        },
+        {
+          "module": "ventilation",
+          "sign": "-",
+          "peak": 0.1796
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "bicarbonate",
+        "parasympathetic",
+        "urine_output",
+        "ventilation"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_sitagliptin_dpp4",
+      "refs": [
+        "Januvia label: DPP-4 inhibition preserves incretin (GLP-1) -> satiety signal preserved"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "satiety",
+          "sign": "+",
+          "peak": 0.7414
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "satiety"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_tolvaptan_v2",
+      "refs": [
+        "Samsca label: V2 antagonist -> aquaresis (free-water diuresis)"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "aqp2",
+          "sign": "-",
+          "peak": 1.1458
+        },
+        {
+          "module": "urine_output",
+          "sign": "+",
+          "peak": 0.6228
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "adh",
+        "appetite",
+        "aqp2",
+        "arousal",
+        "histamine",
+        "pain"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_amiloride_enac",
+      "refs": [
+        "G&G: ENaC blockade -> natriuresis with potassium sparing"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "urine_output",
+          "sign": "+",
+          "peak": 0.6227
+        },
+        {
+          "module": "kaliuresis",
+          "sign": "-",
+          "peak": 0.2345
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "adenosine",
+        "arousal",
+        "enac",
+        "fibrinolysis",
+        "sympathetic",
+        "thrombin",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_topiramate_ca",
+      "refs": [
+        "Topamax label: carbonic anhydrase inhibition -> bicarbonaturia -> metabolic acidosis"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "bicarbonate",
+          "sign": "-",
+          "peak": 0.8316
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "bicarbonate",
+        "memory_consolidation",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_moxifloxacin_qt",
+      "refs": [
+        "Avelox label: QT prolongation via hERG blockade"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "arrhythmia_risk",
+          "sign": "+",
+          "peak": 0.3194
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arrhythmia_risk",
+        "nfkb",
+        "pyrogen"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_verapamil_ccb",
+      "refs": [
+        "G&G: non-DHP calcium channel blocker -> negative inotropy + vasodilation"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "contractility",
+          "sign": "-",
+          "peak": 0.7198
+        },
+        {
+          "module": "peripheral_perfusion",
+          "sign": "+",
+          "peak": 0.7561
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arrhythmia_risk",
+        "contractility",
+        "peripheral_perfusion"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_fenofibrate_ppara",
+      "refs": [
+        "Tricor label: PPAR-alpha agonist -> fatty-acid oxidation, TG lowering"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "lipolysis",
+          "sign": "+",
+          "peak": 0.753
+        },
+        {
+          "module": "vldl",
+          "sign": "-",
+          "peak": 0.5493
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "lipolysis",
+        "vldl"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_bumetanide_loop",
+      "refs": [
+        "Bumex label: NKCC2 blockade -> natriuresis and kaliuresis"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "urine_output",
+          "sign": "+",
+          "peak": 0.7566
+        },
+        {
+          "module": "sodium_load",
+          "sign": "-",
+          "peak": 0.7849
+        }
+      ],
+      "misses": [
+        {
+          "module": "kaliuresis",
+          "want": "+",
+          "peak": 0.0176,
+          "reason": "propagation"
+        }
+      ],
+      "quiet_violations": [],
+      "anchors": [
+        "k_depletion",
+        "sodium_load",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_eplerenone_mra",
+      "refs": [
+        "Inspra label: selective MR antagonist -> natriuresis, K retention"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "kaliuresis",
+          "sign": "-",
+          "peak": 1.0385
+        },
+        {
+          "module": "urine_output",
+          "sign": "+",
+          "peak": 0.4758
+        },
+        {
+          "module": "sodium_load",
+          "sign": "-",
+          "peak": 0.5889
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "aldosterone",
+        "contractility",
+        "cortisol",
+        "enac",
+        "epo",
+        "gonadal_steroid",
+        "gonadotropin",
+        "kaliuresis",
+        "nfkb",
+        "peripheral_perfusion",
+        "resorption",
+        "sodium_load",
+        "tcell",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_diclofenac_nsaid",
+      "refs": [
+        "Voltaren label: nonselective COX inhibitor -> antiplatelet; renal PG loss -> Na retention/edema"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "prostaglandin",
+          "sign": "-",
+          "peak": 1.0732
+        },
+        {
+          "module": "platelet",
+          "sign": "-",
+          "peak": 0.9754
+        },
+        {
+          "module": "sodium_load",
+          "sign": "+",
+          "peak": 0.3508
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "bicarbonate",
+        "coronary_flow",
+        "nfkb",
+        "platelet",
+        "prostaglandin",
+        "pulmonary_vr",
+        "pyrogen",
+        "urine_output"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_glucagon_gcgr",
+      "refs": [
+        "GlucaGen label: GCG receptor agonist -> hepatic glycogenolysis"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "glucagon",
+          "sign": "+",
+          "peak": 0.7616
+        },
+        {
+          "module": "glycogenolysis",
+          "sign": "+",
+          "peak": 0.834
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "glucagon",
+        "glycogenolysis"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_erythromycin_motilin",
+      "refs": [
+        "G&G: erythromycin is a motilin receptor agonist -> prokinetic effect"
+      ],
+      "n_expected": 1,
+      "hits": [
+        {
+          "module": "motility",
+          "sign": "+",
+          "peak": 0.5862
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arrhythmia_risk",
+        "motility",
+        "nfkb",
+        "pyrogen"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_nitroglycerin_no",
+      "refs": [
+        "Nitrostat label: NO donor -> venous/coronary vasodilation"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "nitric_oxide",
+          "sign": "+",
+          "peak": 0.7811
+        },
+        {
+          "module": "peripheral_perfusion",
+          "sign": "+",
+          "peak": 0.1491
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "nitric_oxide"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_prazosin_a1",
+      "refs": [
+        "Minipress label: alpha-1 blocker -> vasodilation; first-dose orthostatic hypotension is a documented class effect"
+      ],
+      "n_expected": 2,
+      "hits": [
+        {
+          "module": "peripheral_perfusion",
+          "sign": "+",
+          "peak": 0.7658
+        },
+        {
+          "module": "orthostatic_stress",
+          "sign": "+",
+          "peak": 0.1952
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [
+        "arousal",
+        "micturition",
+        "peripheral_perfusion",
+        "preload",
+        "sympathetic"
+      ],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_vomiting_volume",
+      "refs": [
+        "Guyton: GI fluid loss -> volume contraction -> ADH/renin compensation"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "gi_fluid_loss",
+          "sign": "+",
+          "peak": 0.4346
+        },
+        {
+          "module": "plasma_vol",
+          "sign": "-",
+          "peak": 0.0552
+        },
+        {
+          "module": "adh",
+          "sign": "+",
+          "peak": 0.1622
+        }
+      ],
+      "misses": [],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    },
+    {
+      "id": "h2_heat_sauna",
+      "refs": [
+        "Guyton: heat -> sweating -> volume loss -> ADH release"
+      ],
+      "n_expected": 3,
+      "hits": [
+        {
+          "module": "sweat",
+          "sign": "+",
+          "peak": 0.2933
+        },
+        {
+          "module": "skin_bloodflow",
+          "sign": "+",
+          "peak": 0.1887
+        }
+      ],
+      "misses": [
+        {
+          "module": "adh",
+          "want": "+",
+          "peak": 0.0082,
+          "reason": "propagation"
+        }
+      ],
+      "quiet_violations": [],
+      "anchors": [],
+      "outcome": {
+        "claimed": false,
+        "found": false
+      }
+    }
+  ]
+}

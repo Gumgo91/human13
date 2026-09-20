@@ -1,0 +1,6292 @@
+{
+  "claim": "non-anchored modules respond via network propagation only",
+  "note": "no post-hoc literature annotation is applied; every surfaced entry is an unvalidated model output to be checked against external evidence",
+  "n_scenarios": 49,
+  "n_surfaced": 698,
+  "n_generic": 266,
+  "n_specific": 432,
+  "surfaced": [
+    {
+      "scenario": "ext_albuterol_bronchodilation",
+      "entity": "albuterol",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.299,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_albuterol_bronchodilation",
+      "entity": "albuterol",
+      "module": "co2_load",
+      "direction": "-",
+      "peak": 0.1889,
+      "via": "rx_airway -> airway -> ventilation -> co2_load -> cerebral_flow",
+      "generic": false
+    },
+    {
+      "scenario": "ext_albuterol_bronchodilation",
+      "entity": "albuterol",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3437,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_albuterol_bronchodilation",
+      "entity": "albuterol",
+      "module": "mucus",
+      "direction": "-",
+      "peak": 0.1507,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_albuterol_bronchodilation",
+      "entity": "albuterol",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_albuterol_bronchodilation",
+      "entity": "albuterol",
+      "module": "fatty_acid",
+      "direction": "+",
+      "peak": 0.4294,
+      "via": "rx_lipolysis -> lipolysis -> fatty_acid -> oxidation -> fatigue",
+      "generic": false
+    },
+    {
+      "scenario": "ext_albuterol_bronchodilation",
+      "entity": "albuterol",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7813,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_albuterol_bronchodilation",
+      "entity": "albuterol",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1479,
+      "via": "fasting -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_albuterol_bronchodilation",
+      "entity": "albuterol",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4867,
+      "via": "fasting -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_albuterol_bronchodilation",
+      "entity": "albuterol",
+      "module": "insulin_resistance",
+      "direction": "+",
+      "peak": 0.1364,
+      "via": "rx_lipolysis -> lipolysis -> insulin_resistance -> muscle_glucose_uptake",
+      "generic": false
+    },
+    {
+      "scenario": "ext_albuterol_bronchodilation",
+      "entity": "albuterol",
+      "module": "vldl",
+      "direction": "+",
+      "peak": 0.1519,
+      "via": "rx_lipolysis -> lipolysis -> fatty_acid -> vldl",
+      "generic": false
+    },
+    {
+      "scenario": "ext_albuterol_bronchodilation",
+      "entity": "albuterol",
+      "module": "cough",
+      "direction": "-",
+      "peak": 0.3764,
+      "via": "rx_airway -> airway -> cough",
+      "generic": false
+    },
+    {
+      "scenario": "ext_albuterol_bronchodilation",
+      "entity": "albuterol",
+      "module": "ketogenesis",
+      "direction": "+",
+      "peak": 0.1904,
+      "via": "rx_lipolysis -> lipolysis -> ketogenesis -> acid_load -> renal_acid",
+      "generic": false
+    },
+    {
+      "scenario": "ext_propranolol_beta_blockade",
+      "entity": "propranolol",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2255,
+      "via": "apnea -> catecholamine -> airway -> oxygen_deficit -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ext_propranolol_beta_blockade",
+      "entity": "propranolol",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.1998,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_propranolol_beta_blockade",
+      "entity": "propranolol",
+      "module": "pulmonary_vr",
+      "direction": "+",
+      "peak": 0.1019,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> airway -> oxygen_deficit -> pulmonary_vr",
+      "generic": false
+    },
+    {
+      "scenario": "ext_propranolol_beta_blockade",
+      "entity": "propranolol",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1462,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_propranolol_beta_blockade",
+      "entity": "propranolol",
+      "module": "fatty_acid",
+      "direction": "-",
+      "peak": 0.2781,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> fatty_acid -> vldl",
+      "generic": false
+    },
+    {
+      "scenario": "ext_propranolol_beta_blockade",
+      "entity": "propranolol",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.5437,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_propranolol_beta_blockade",
+      "entity": "propranolol",
+      "module": "oxygen_deficit",
+      "direction": "+",
+      "peak": 0.1794,
+      "via": "apnea -> co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway",
+      "generic": false
+    },
+    {
+      "scenario": "ext_propranolol_beta_blockade",
+      "entity": "propranolol",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.3039,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ext_propranolol_beta_blockade",
+      "entity": "propranolol",
+      "module": "hypoxic_drive",
+      "direction": "+",
+      "peak": 0.1367,
+      "via": "apnea -> co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway",
+      "generic": false
+    },
+    {
+      "scenario": "ext_propranolol_beta_blockade",
+      "entity": "propranolol",
+      "module": "cough",
+      "direction": "+",
+      "peak": 0.2551,
+      "via": "co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway -> cough",
+      "generic": false
+    },
+    {
+      "scenario": "ext_propranolol_beta_blockade",
+      "entity": "propranolol",
+      "module": "ketogenesis",
+      "direction": "-",
+      "peak": 0.1172,
+      "via": "airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> ketogenesis -> acid_load -> contractility",
+      "generic": false
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2351,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "renin",
+      "direction": "+",
+      "peak": 0.1181,
+      "via": "k_depletion -> renal_acid -> acid_load -> enac -> sodium_load -> renin -> angiotensin -> aldosterone",
+      "generic": false
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.2222,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "baroreceptor",
+      "direction": "-",
+      "peak": 0.1075,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "renal_bloodflow",
+      "direction": "+",
+      "peak": 0.262,
+      "via": "k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load -> renin -> angiotensin -> renal_bloodflow",
+      "generic": false
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "endothelin",
+      "direction": "-",
+      "peak": 0.2132,
+      "via": "k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load -> renin -> angiotensin -> endothelin",
+      "generic": false
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1489,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.5784,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "k_depletion",
+      "direction": "-",
+      "peak": 0.1155,
+      "via": "k_depletion -> renal_acid -> acid_load -> enac -> sodium_load -> renin -> angiotensin -> aldosterone",
+      "generic": false
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "kaliuresis",
+      "direction": "-",
+      "peak": 0.4303,
+      "via": "renal_acid -> acid_load -> enac -> sodium_load -> renin -> angiotensin -> aldosterone -> kaliuresis",
+      "generic": false
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.3417,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "urine_output",
+      "direction": "+",
+      "peak": 0.1047,
+      "via": "renal_acid -> acid_load -> enac -> sodium_load -> renin -> angiotensin -> aldosterone -> urine_output",
+      "generic": false
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "gfr",
+      "direction": "-",
+      "peak": 0.1655,
+      "via": "k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load -> renin -> angiotensin -> gfr",
+      "generic": false
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "enac",
+      "direction": "-",
+      "peak": 0.711,
+      "via": "k_depletion -> renal_acid -> acid_load -> enac -> sodium_load -> renin -> angiotensin -> aldosterone",
+      "generic": false
+    },
+    {
+      "scenario": "ext_lisinopril_ace",
+      "entity": "lisinopril",
+      "module": "potassium_shift",
+      "direction": "+",
+      "peak": 0.3568,
+      "via": "renal_acid -> acid_load -> enac -> sodium_load -> renin -> angiotensin -> aldosterone -> potassium_shift",
+      "generic": false
+    },
+    {
+      "scenario": "ext_losartan_at1",
+      "entity": "losartan",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2552,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ext_losartan_at1",
+      "entity": "losartan",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.2078,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_losartan_at1",
+      "entity": "losartan",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1731,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_losartan_at1",
+      "entity": "losartan",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.6185,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_losartan_at1",
+      "entity": "losartan",
+      "module": "kaliuresis",
+      "direction": "-",
+      "peak": 0.1606,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_losartan_at1",
+      "entity": "losartan",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.3332,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ext_losartan_at1",
+      "entity": "losartan",
+      "module": "enac",
+      "direction": "-",
+      "peak": 0.2628,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_losartan_at1",
+      "entity": "losartan",
+      "module": "potassium_shift",
+      "direction": "+",
+      "peak": 0.1305,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_furosemide_diuresis",
+      "entity": "furosemide",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2983,
+      "via": "cold_exposure -> thermosensor -> skin_bloodflow -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward",
+      "generic": true
+    },
+    {
+      "scenario": "ext_furosemide_diuresis",
+      "entity": "furosemide",
+      "module": "osmotic_drive",
+      "direction": "-",
+      "peak": 0.1149,
+      "via": "kaliuresis -> k_depletion -> renal_acid -> bicarbonate -> acid_load -> enac -> sodium_load -> osmotic_drive",
+      "generic": false
+    },
+    {
+      "scenario": "ext_furosemide_diuresis",
+      "entity": "furosemide",
+      "module": "renin",
+      "direction": "+",
+      "peak": 0.1814,
+      "via": "bicarbonate -> acid_load -> enac -> sodium_load -> renin -> angiotensin -> aldosterone -> urine_output",
+      "generic": false
+    },
+    {
+      "scenario": "ext_furosemide_diuresis",
+      "entity": "furosemide",
+      "module": "arrhythmia_risk",
+      "direction": "+",
+      "peak": 0.112,
+      "via": "sodium_load -> renin -> angiotensin -> aldosterone -> potassium_shift -> kaliuresis -> k_depletion -> arrhythmia_risk",
+      "generic": false
+    },
+    {
+      "scenario": "ext_furosemide_diuresis",
+      "entity": "furosemide",
+      "module": "plasma_vol",
+      "direction": "-",
+      "peak": 0.1564,
+      "via": "acid_load -> enac -> sodium_load -> renin -> angiotensin -> aldosterone -> urine_output -> plasma_vol",
+      "generic": false
+    },
+    {
+      "scenario": "ext_furosemide_diuresis",
+      "entity": "furosemide",
+      "module": "micturition",
+      "direction": "+",
+      "peak": 0.1008,
+      "via": "enac -> sodium_load -> renin -> angiotensin -> aldosterone -> urine_output -> bladder_fill -> micturition",
+      "generic": false
+    },
+    {
+      "scenario": "ext_furosemide_diuresis",
+      "entity": "furosemide",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.2816,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ext_furosemide_diuresis",
+      "entity": "furosemide",
+      "module": "bladder_fill",
+      "direction": "+",
+      "peak": 0.1734,
+      "via": "acid_load -> enac -> sodium_load -> renin -> angiotensin -> aldosterone -> urine_output -> bladder_fill",
+      "generic": false
+    },
+    {
+      "scenario": "ext_furosemide_diuresis",
+      "entity": "furosemide",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1999,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pain -> emetic_drive",
+      "generic": true
+    },
+    {
+      "scenario": "ext_furosemide_diuresis",
+      "entity": "furosemide",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7699,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_furosemide_diuresis",
+      "entity": "furosemide",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1253,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_furosemide_diuresis",
+      "entity": "furosemide",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4417,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ext_furosemide_diuresis",
+      "entity": "furosemide",
+      "module": "angiotensin",
+      "direction": "+",
+      "peak": 0.1066,
+      "via": "bicarbonate -> acid_load -> enac -> sodium_load -> renin -> angiotensin -> aldosterone -> urine_output",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "pyrogen",
+      "direction": "+",
+      "peak": 0.382,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pyrogen",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.3186,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "endothelial_activation",
+      "direction": "+",
+      "peak": 0.1669,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> endothelial_activation",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "adh",
+      "direction": "+",
+      "peak": 0.1001,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "macrophage",
+      "direction": "+",
+      "peak": 0.1705,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "gnrh",
+      "direction": "+",
+      "peak": 0.149,
+      "via": "resolution -> nfkb -> il6 -> crh -> acth -> cortisol -> gnrh -> gonadotropin",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "renin",
+      "direction": "+",
+      "peak": 0.2128,
+      "via": "acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load -> renin",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "plasma_vol",
+      "direction": "-",
+      "peak": 0.2529,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> urine_output -> plasma_vol",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "nk_cell",
+      "direction": "+",
+      "peak": 0.1865,
+      "via": "tcell -> resolution -> nfkb -> il6 -> crh -> acth -> cortisol -> nk_cell",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "micturition",
+      "direction": "+",
+      "peak": 0.1596,
+      "via": "acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> urine_output -> bladder_fill -> micturition",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.385,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "bladder_fill",
+      "direction": "+",
+      "peak": 0.2781,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> urine_output -> bladder_fill",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "endothelin",
+      "direction": "+",
+      "peak": 0.1167,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "sympathetic",
+      "direction": "+",
+      "peak": 0.111,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "tnf",
+      "direction": "+",
+      "peak": 0.2562,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pyrogen",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "prostaglandin",
+      "direction": "+",
+      "peak": 0.1994,
+      "via": "resolution -> macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.2221,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pain -> emetic_drive",
+      "generic": true
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "thermosensor",
+      "direction": "+",
+      "peak": 0.266,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "shivering",
+      "direction": "+",
+      "peak": 0.1145,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "sweat",
+      "direction": "+",
+      "peak": 0.1607,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1428,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "crh",
+      "direction": "+",
+      "peak": 0.2333,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "k_depletion",
+      "direction": "-",
+      "peak": 0.2024,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "systemic_inflammation",
+      "direction": "+",
+      "peak": 0.2535,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.5136,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "il1",
+      "direction": "+",
+      "peak": 0.2485,
+      "via": "resolution -> macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> il1",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "lymphocyte_traffic",
+      "direction": "+",
+      "peak": 0.1406,
+      "via": "tcell -> resolution -> nfkb -> il6 -> crh -> acth -> cortisol -> lymphocyte_traffic",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "il6",
+      "direction": "+",
+      "peak": 0.2182,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "dendritic",
+      "direction": "+",
+      "peak": 0.1186,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "acth",
+      "direction": "+",
+      "peak": 0.1626,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "pain",
+      "direction": "+",
+      "peak": 0.1126,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pain -> emetic_drive",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "anticoagulant",
+      "direction": "-",
+      "peak": 0.1161,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "neuroinflammation",
+      "direction": "+",
+      "peak": 0.1569,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> neuroinflammation",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "orthostatic_stress",
+      "direction": "+",
+      "peak": 0.1419,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "crp",
+      "direction": "+",
+      "peak": 0.1866,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> il1 -> crp",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "resolution",
+      "direction": "+",
+      "peak": 0.1663,
+      "via": "resolution -> macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> tcell",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "angiotensin",
+      "direction": "+",
+      "peak": 0.1247,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "potassium_shift",
+      "direction": "+",
+      "peak": 0.2509,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "skin_bloodflow",
+      "direction": "+",
+      "peak": 0.2407,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_spironolactone_k_sparing",
+      "entity": "spironolactone",
+      "module": "consumption_coag",
+      "direction": "+",
+      "peak": 0.1574,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> consumption_coag",
+      "generic": false
+    },
+    {
+      "scenario": "ext_atorvastatin_hmgcr",
+      "entity": "atorvastatin",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.1409,
+      "via": "cognitive -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ext_atorvastatin_hmgcr",
+      "entity": "atorvastatin",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.1438,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_atorvastatin_hmgcr",
+      "entity": "atorvastatin",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.3623,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_atorvastatin_hmgcr",
+      "entity": "atorvastatin",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.2097,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_warfarin_anticoag",
+      "entity": "warfarin",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.299,
+      "via": "cognitive -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ext_warfarin_anticoag",
+      "entity": "warfarin",
+      "module": "fibrinolysis",
+      "direction": "-",
+      "peak": 0.2209,
+      "via": "rx_anticoagulant -> anticoagulant -> thrombin -> fibrin -> fibrinolysis",
+      "generic": false
+    },
+    {
+      "scenario": "ext_warfarin_anticoag",
+      "entity": "warfarin",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3281,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_warfarin_anticoag",
+      "entity": "warfarin",
+      "module": "platelet",
+      "direction": "-",
+      "peak": 0.2228,
+      "via": "rx_anticoagulant -> anticoagulant -> thrombin -> platelet",
+      "generic": false
+    },
+    {
+      "scenario": "ext_warfarin_anticoag",
+      "entity": "warfarin",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_warfarin_anticoag",
+      "entity": "warfarin",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7808,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_warfarin_anticoag",
+      "entity": "warfarin",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1348,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_warfarin_anticoag",
+      "entity": "warfarin",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4802,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_warfarin_anticoag",
+      "entity": "warfarin",
+      "module": "coronary_flow",
+      "direction": "+",
+      "peak": 0.2226,
+      "via": "rx_anticoagulant -> anticoagulant -> thrombin -> coronary_flow",
+      "generic": false
+    },
+    {
+      "scenario": "ext_warfarin_anticoag",
+      "entity": "warfarin",
+      "module": "consumption_coag",
+      "direction": "-",
+      "peak": 0.638,
+      "via": "rx_anticoagulant -> anticoagulant -> thrombin -> consumption_coag",
+      "generic": false
+    },
+    {
+      "scenario": "ext_ondansetron_antiemetic",
+      "entity": "ondansetron",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2991,
+      "via": "rx_arousal -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ext_ondansetron_antiemetic",
+      "entity": "ondansetron",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3263,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_ondansetron_antiemetic",
+      "entity": "ondansetron",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7807,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_ondansetron_antiemetic",
+      "entity": "ondansetron",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1334,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_ondansetron_antiemetic",
+      "entity": "ondansetron",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4793,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_digoxin_inotropy",
+      "entity": "digoxin",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.299,
+      "via": "cognitive -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ext_digoxin_inotropy",
+      "entity": "digoxin",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3305,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_digoxin_inotropy",
+      "entity": "digoxin",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_digoxin_inotropy",
+      "entity": "digoxin",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7809,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_digoxin_inotropy",
+      "entity": "digoxin",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1367,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_digoxin_inotropy",
+      "entity": "digoxin",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4812,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_sildenafil_pde5",
+      "entity": "sildenafil",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.305,
+      "via": "cold_exposure -> thermosensor -> skin_bloodflow -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward",
+      "generic": true
+    },
+    {
+      "scenario": "ext_sildenafil_pde5",
+      "entity": "sildenafil",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3051,
+      "via": "rx_nfkb -> nfkb -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ext_sildenafil_pde5",
+      "entity": "sildenafil",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_sildenafil_pde5",
+      "entity": "sildenafil",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7737,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_sildenafil_pde5",
+      "entity": "sildenafil",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1328,
+      "via": "orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_sildenafil_pde5",
+      "entity": "sildenafil",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4543,
+      "via": "skin_bloodflow -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ext_clonidine_central_alpha2",
+      "entity": "clonidine",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2583,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ext_clonidine_central_alpha2",
+      "entity": "clonidine",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3317,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_clonidine_central_alpha2",
+      "entity": "clonidine",
+      "module": "baroreceptor",
+      "direction": "+",
+      "peak": 0.1471,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_clonidine_central_alpha2",
+      "entity": "clonidine",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_clonidine_central_alpha2",
+      "entity": "clonidine",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_clonidine_central_alpha2",
+      "entity": "clonidine",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1381,
+      "via": "orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_clonidine_central_alpha2",
+      "entity": "clonidine",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.483,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ext_clonidine_central_alpha2",
+      "entity": "clonidine",
+      "module": "cerebral_metabolism",
+      "direction": "+",
+      "peak": 0.1013,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> cerebral_metabolism",
+      "generic": false
+    },
+    {
+      "scenario": "ext_clonidine_central_alpha2",
+      "entity": "clonidine",
+      "module": "catecholamine",
+      "direction": "+",
+      "peak": 0.1607,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.3013,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "bicarbonate",
+      "direction": "-",
+      "peak": 0.1355,
+      "via": "sleep -> sleep_pressure -> mental_fatigue -> cognitive_load -> atp_demand -> lactate -> acid_load -> bicarbonate",
+      "generic": false
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "mtor",
+      "direction": "-",
+      "peak": 0.2997,
+      "via": "sleep -> sleep_pressure -> mental_fatigue -> cognitive_load -> atp_demand -> ampk -> mtor -> protein_breakdown",
+      "generic": false
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "contractility",
+      "direction": "-",
+      "peak": 0.1316,
+      "via": "sleep -> sleep_pressure -> mental_fatigue -> cognitive_load -> atp_demand -> lactate -> acid_load -> contractility",
+      "generic": false
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "arrhythmia_risk",
+      "direction": "+",
+      "peak": 0.1524,
+      "via": "sleep -> sleep_pressure -> mental_fatigue -> cognitive_load -> atp_demand -> lactate -> acid_load -> arrhythmia_risk",
+      "generic": false
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3229,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7805,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "muscle_glucose_uptake",
+      "direction": "+",
+      "peak": 0.4885,
+      "via": "sleep -> sleep_pressure -> mental_fatigue -> cognitive_load -> atp_demand -> ampk -> muscle_glucose_uptake",
+      "generic": false
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "fatigue",
+      "direction": "+",
+      "peak": 0.9144,
+      "via": "sleep -> sleep_pressure -> mental_fatigue -> cognitive_load -> atp_demand -> lactate -> fatigue",
+      "generic": false
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1302,
+      "via": "orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "acid_load",
+      "direction": "+",
+      "peak": 0.4749,
+      "via": "sleep -> sleep_pressure -> mental_fatigue -> cognitive_load -> atp_demand -> lactate -> acid_load -> renal_acid",
+      "generic": false
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.475,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "adenosine",
+      "direction": "+",
+      "peak": 0.2076,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_metformin_ampk",
+      "entity": "metformin",
+      "module": "renal_acid",
+      "direction": "+",
+      "peak": 0.2018,
+      "via": "sleep -> sleep_pressure -> mental_fatigue -> cognitive_load -> atp_demand -> lactate -> acid_load -> renal_acid",
+      "generic": false
+    },
+    {
+      "scenario": "ext_empagliflozin_sglt2",
+      "entity": "empagliflozin",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.3012,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ext_empagliflozin_sglt2",
+      "entity": "empagliflozin",
+      "module": "adh",
+      "direction": "+",
+      "peak": 0.1005,
+      "via": "glucagon -> lipogenesis -> hepatic_load -> albumin -> plasma_vol -> adh -> aqp2 -> urine_output",
+      "generic": false
+    },
+    {
+      "scenario": "ext_empagliflozin_sglt2",
+      "entity": "empagliflozin",
+      "module": "renin",
+      "direction": "+",
+      "peak": 0.1126,
+      "via": "aqp2 -> urine_output -> plasma_vol -> renin -> angiotensin -> aldosterone -> enac -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_empagliflozin_sglt2",
+      "entity": "empagliflozin",
+      "module": "plasma_vol",
+      "direction": "-",
+      "peak": 0.1659,
+      "via": "glucagon -> lipogenesis -> hepatic_load -> albumin -> plasma_vol -> adh -> aqp2 -> urine_output",
+      "generic": false
+    },
+    {
+      "scenario": "ext_empagliflozin_sglt2",
+      "entity": "empagliflozin",
+      "module": "micturition",
+      "direction": "+",
+      "peak": 0.1087,
+      "via": "hepatic_load -> albumin -> plasma_vol -> adh -> aqp2 -> urine_output -> bladder_fill -> micturition",
+      "generic": false
+    },
+    {
+      "scenario": "ext_empagliflozin_sglt2",
+      "entity": "empagliflozin",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3317,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_empagliflozin_sglt2",
+      "entity": "empagliflozin",
+      "module": "bladder_fill",
+      "direction": "+",
+      "peak": 0.1865,
+      "via": "lipogenesis -> hepatic_load -> albumin -> plasma_vol -> adh -> aqp2 -> urine_output -> bladder_fill",
+      "generic": false
+    },
+    {
+      "scenario": "ext_empagliflozin_sglt2",
+      "entity": "empagliflozin",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_empagliflozin_sglt2",
+      "entity": "empagliflozin",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_empagliflozin_sglt2",
+      "entity": "empagliflozin",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.137,
+      "via": "orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_empagliflozin_sglt2",
+      "entity": "empagliflozin",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4772,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ext_levothyroxine_replacement",
+      "entity": "levothyroxine",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2979,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ext_levothyroxine_replacement",
+      "entity": "levothyroxine",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3218,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_levothyroxine_replacement",
+      "entity": "levothyroxine",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_levothyroxine_replacement",
+      "entity": "levothyroxine",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7804,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_levothyroxine_replacement",
+      "entity": "levothyroxine",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1265,
+      "via": "orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_levothyroxine_replacement",
+      "entity": "levothyroxine",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4602,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "vwf",
+      "direction": "-",
+      "peak": 0.1511,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "pyrogen",
+      "direction": "-",
+      "peak": 0.5815,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pyrogen",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.289,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "mood",
+      "direction": "+",
+      "peak": 0.1088,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "endothelial_activation",
+      "direction": "-",
+      "peak": 0.2553,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> endothelial_activation",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "macrophage",
+      "direction": "-",
+      "peak": 0.2617,
+      "via": "tcell -> resolution -> macrophage -> il6 -> crh -> acth -> cortisol -> nfkb",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "urea_cycle",
+      "direction": "+",
+      "peak": 0.1058,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "gnrh",
+      "direction": "-",
+      "peak": 0.1765,
+      "via": "tcell -> resolution -> nfkb -> il6 -> crh -> acth -> cortisol -> gnrh",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "mtor",
+      "direction": "-",
+      "peak": 0.1214,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "contractility",
+      "direction": "-",
+      "peak": 0.1058,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "plasma_vol",
+      "direction": "+",
+      "peak": 0.1073,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "nk_cell",
+      "direction": "-",
+      "peak": 0.2864,
+      "via": "tcell -> resolution -> nfkb -> il6 -> crh -> acth -> cortisol -> nk_cell",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "wound_repair",
+      "direction": "-",
+      "peak": 0.1034,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.2505,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "bcell",
+      "direction": "-",
+      "peak": 0.1384,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "platelet",
+      "direction": "-",
+      "peak": 0.1496,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "thrombin",
+      "direction": "-",
+      "peak": 0.1499,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "interferon",
+      "direction": "-",
+      "peak": 0.125,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "bladder_fill",
+      "direction": "-",
+      "peak": 0.1189,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "endothelin",
+      "direction": "-",
+      "peak": 0.1364,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "sympathetic",
+      "direction": "-",
+      "peak": 0.1169,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "tnf",
+      "direction": "-",
+      "peak": 0.3924,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pyrogen",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "prostaglandin",
+      "direction": "-",
+      "peak": 0.3056,
+      "via": "resolution -> macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1851,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pain -> emetic_drive",
+      "generic": true
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "thermosensor",
+      "direction": "-",
+      "peak": 0.403,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7809,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "shivering",
+      "direction": "+",
+      "peak": 0.1102,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1274,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "crh",
+      "direction": "-",
+      "peak": 0.3582,
+      "via": "tcell -> resolution -> macrophage -> il6 -> crh -> acth -> cortisol -> nfkb",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "neutrophil",
+      "direction": "-",
+      "peak": 0.1335,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "piloerection",
+      "direction": "+",
+      "peak": 0.2425,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "systemic_inflammation",
+      "direction": "-",
+      "peak": 0.3881,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4319,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "nitric_oxide",
+      "direction": "+",
+      "peak": 0.1034,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "il1",
+      "direction": "-",
+      "peak": 0.3805,
+      "via": "resolution -> macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> il1",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "lymphocyte_traffic",
+      "direction": "-",
+      "peak": 0.2139,
+      "via": "tcell -> resolution -> nfkb -> il6 -> crh -> acth -> cortisol -> lymphocyte_traffic",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "il6",
+      "direction": "-",
+      "peak": 0.3343,
+      "via": "tcell -> resolution -> macrophage -> il6 -> crh -> acth -> cortisol -> nfkb",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "dendritic",
+      "direction": "-",
+      "peak": 0.1824,
+      "via": "resolution -> macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> dendritic",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "acth",
+      "direction": "-",
+      "peak": 0.2494,
+      "via": "tcell -> resolution -> macrophage -> il6 -> crh -> acth -> cortisol -> nfkb",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "pain",
+      "direction": "-",
+      "peak": 0.1724,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pain -> emetic_drive",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "anticoagulant",
+      "direction": "+",
+      "peak": 0.1748,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> anticoagulant",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "neuroinflammation",
+      "direction": "-",
+      "peak": 0.2383,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> neuroinflammation",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "crp",
+      "direction": "-",
+      "peak": 0.2847,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> il1 -> crp",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "thyroid",
+      "direction": "-",
+      "peak": 0.1117,
+      "via": "thyroid -> co2_load -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> enac",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "resolution",
+      "direction": "-",
+      "peak": 0.2491,
+      "via": "tcell -> resolution -> macrophage -> il6 -> crh -> acth -> cortisol -> nfkb",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "preoptic",
+      "direction": "-",
+      "peak": 0.1781,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pyrogen -> preoptic",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "barrier_damage",
+      "direction": "-",
+      "peak": 0.1079,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "skin_bloodflow",
+      "direction": "-",
+      "peak": 0.3235,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "consumption_coag",
+      "direction": "-",
+      "peak": 0.2379,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> consumption_coag",
+      "generic": false
+    },
+    {
+      "scenario": "ext_prednisone_immunosuppression",
+      "entity": "prednisone",
+      "module": "protein_breakdown",
+      "direction": "+",
+      "peak": 0.1334,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2887,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "sodium_load",
+      "direction": "+",
+      "peak": 0.186,
+      "via": "crh -> acth -> cortisol -> nfkb -> tnf -> pain -> prostaglandin -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3303,
+      "via": "prostaglandin -> pain -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "peripheral_perfusion",
+      "direction": "-",
+      "peak": 0.1055,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "thrombin",
+      "direction": "+",
+      "peak": 0.1265,
+      "via": "crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> anticoagulant -> thrombin -> platelet",
+      "generic": false
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "bladder_fill",
+      "direction": "-",
+      "peak": 0.1024,
+      "via": "acth -> cortisol -> nfkb -> tnf -> pain -> prostaglandin -> urine_output -> bladder_fill",
+      "generic": false
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1763,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> emetic_drive",
+      "generic": true
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "thermosensor",
+      "direction": "-",
+      "peak": 0.3582,
+      "via": "cold_exposure -> thermosensor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": false
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7809,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1367,
+      "via": "cold_exposure -> thermosensor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "piloerection",
+      "direction": "+",
+      "peak": 0.2155,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4817,
+      "via": "cold_exposure -> thermosensor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "urine_output",
+      "direction": "-",
+      "peak": 0.1898,
+      "via": "crh -> acth -> cortisol -> nfkb -> tnf -> pain -> prostaglandin -> urine_output",
+      "generic": false
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "pain",
+      "direction": "-",
+      "peak": 0.1775,
+      "via": "crh -> acth -> cortisol -> nfkb -> tnf -> pain -> prostaglandin -> pyrogen",
+      "generic": false
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "preoptic",
+      "direction": "-",
+      "peak": 0.2834,
+      "via": "acth -> cortisol -> nfkb -> tnf -> pain -> prostaglandin -> pyrogen -> preoptic",
+      "generic": false
+    },
+    {
+      "scenario": "ext_ibuprofen_cox",
+      "entity": "ibuprofen",
+      "module": "skin_bloodflow",
+      "direction": "-",
+      "peak": 0.286,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ext_tirzepatide_incretin",
+      "entity": "tirzepatide",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.1136,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward",
+      "generic": true
+    },
+    {
+      "scenario": "ext_tirzepatide_incretin",
+      "entity": "tirzepatide",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.2837,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ext_tirzepatide_incretin",
+      "entity": "tirzepatide",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.1556,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_amlodipine_ccb",
+      "entity": "amlodipine",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.299,
+      "via": "cognitive -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_amlodipine_ccb",
+      "entity": "amlodipine",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3317,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_amlodipine_ccb",
+      "entity": "amlodipine",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_amlodipine_ccb",
+      "entity": "amlodipine",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_amlodipine_ccb",
+      "entity": "amlodipine",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1378,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_amlodipine_ccb",
+      "entity": "amlodipine",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4818,
+      "via": "hepatic_load -> albumin -> plasma_vol -> adh -> aqp2 -> urine_output -> bladder_fill -> micturition",
+      "generic": true
+    },
+    {
+      "scenario": "ho_montelukast_cyslt1",
+      "entity": "montelukast",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.4069,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_montelukast_cyslt1",
+      "entity": "montelukast",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3203,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_montelukast_cyslt1",
+      "entity": "montelukast",
+      "module": "deep_sleep",
+      "direction": "-",
+      "peak": 0.1314,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> deep_sleep -> gh",
+      "generic": false
+    },
+    {
+      "scenario": "ho_montelukast_cyslt1",
+      "entity": "montelukast",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_montelukast_cyslt1",
+      "entity": "montelukast",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7803,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_montelukast_cyslt1",
+      "entity": "montelukast",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1284,
+      "via": "orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_montelukast_cyslt1",
+      "entity": "montelukast",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4753,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_montelukast_cyslt1",
+      "entity": "montelukast",
+      "module": "cough",
+      "direction": "-",
+      "peak": 0.503,
+      "via": "rx_airway_inflammation -> airway_inflammation -> airway -> mucus -> cough",
+      "generic": false
+    },
+    {
+      "scenario": "ho_montelukast_cyslt1",
+      "entity": "montelukast",
+      "module": "cerebral_metabolism",
+      "direction": "+",
+      "peak": 0.1491,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> cerebral_metabolism",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sumatriptan_triptan",
+      "entity": "sumatriptan",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.299,
+      "via": "cognitive -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_sumatriptan_triptan",
+      "entity": "sumatriptan",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3317,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_sumatriptan_triptan",
+      "entity": "sumatriptan",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_sumatriptan_triptan",
+      "entity": "sumatriptan",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1378,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_sumatriptan_triptan",
+      "entity": "sumatriptan",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4818,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_atorvastatin_hmgcr",
+      "entity": "atorvastatin",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.1409,
+      "via": "cognitive -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_atorvastatin_hmgcr",
+      "entity": "atorvastatin",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.1438,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_atorvastatin_hmgcr",
+      "entity": "atorvastatin",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.3623,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_atorvastatin_hmgcr",
+      "entity": "atorvastatin",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.2097,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "oxygen_delivery",
+      "direction": "-",
+      "peak": 0.1239,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> airway -> oxygen_deficit -> oxygen_delivery",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2298,
+      "via": "apnea -> catecholamine -> airway -> oxygen_deficit -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "oxidation",
+      "direction": "-",
+      "peak": 0.115,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> fatty_acid -> oxidation",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "co2_load",
+      "direction": "+",
+      "peak": 0.1411,
+      "via": "apnea -> co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "ventilation",
+      "direction": "-",
+      "peak": 0.1412,
+      "via": "apnea -> co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.1998,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "mucus",
+      "direction": "+",
+      "peak": 0.1516,
+      "via": "co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway -> mucus",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "pulmonary_vr",
+      "direction": "+",
+      "peak": 0.1487,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> airway -> oxygen_deficit -> pulmonary_vr",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1462,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "fatty_acid",
+      "direction": "-",
+      "peak": 0.4135,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> fatty_acid -> vldl",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.5437,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "oxygen_deficit",
+      "direction": "+",
+      "peak": 0.26,
+      "via": "apnea -> co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.3035,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "hypoxic_drive",
+      "direction": "+",
+      "peak": 0.198,
+      "via": "apnea -> co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "insulin_resistance",
+      "direction": "-",
+      "peak": 0.1324,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> insulin_resistance -> muscle_glucose_uptake",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "vldl",
+      "direction": "-",
+      "peak": 0.146,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> fatty_acid -> vldl",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "cough",
+      "direction": "+",
+      "peak": 0.3781,
+      "via": "co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway -> cough",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "epo",
+      "direction": "+",
+      "peak": 0.1262,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> airway -> oxygen_deficit -> epo",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "ketogenesis",
+      "direction": "-",
+      "peak": 0.1848,
+      "via": "airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> ketogenesis -> acid_load -> contractility",
+      "generic": false
+    },
+    {
+      "scenario": "ho_propranolol_beta",
+      "entity": "propranolol",
+      "module": "lactate",
+      "direction": "+",
+      "peak": 0.1244,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> airway -> oxygen_deficit -> lactate",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "oxygen_delivery",
+      "direction": "-",
+      "peak": 0.1536,
+      "via": "pain -> crh -> acth -> cortisol -> thyroid -> co2_load -> ventilation -> oxygen_delivery",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "cerebral_flow",
+      "direction": "+",
+      "peak": 0.1587,
+      "via": "cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> ventilation -> co2_load -> cerebral_flow",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.1996,
+      "via": "acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> arousal -> dopamine_reward",
+      "generic": true
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "mood",
+      "direction": "+",
+      "peak": 0.2325,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> mood",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "adh",
+      "direction": "-",
+      "peak": 0.2115,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "osmotic_drive",
+      "direction": "-",
+      "peak": 0.1277,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "co2_load",
+      "direction": "+",
+      "peak": 0.4022,
+      "via": "prostaglandin -> pain -> crh -> acth -> cortisol -> thyroid -> co2_load -> ventilation",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "contractility",
+      "direction": "-",
+      "peak": 0.1948,
+      "via": "nfkb -> prostaglandin -> pain -> sympathetic -> ventilation -> co2_load -> acid_load -> contractility",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "renin",
+      "direction": "-",
+      "peak": 0.1002,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "headache",
+      "direction": "-",
+      "peak": 0.2431,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> headache",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "cortisol",
+      "direction": "-",
+      "peak": 0.111,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.191,
+      "via": "prostaglandin -> pain -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "baroreceptor",
+      "direction": "-",
+      "peak": 0.1225,
+      "via": "acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> orthostatic_stress -> baroreceptor",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "sleep_quality",
+      "direction": "+",
+      "peak": 0.1572,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> sleep_quality",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "sympathetic",
+      "direction": "-",
+      "peak": 0.1944,
+      "via": "acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> parasympathetic -> motility",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "prostaglandin",
+      "direction": "-",
+      "peak": 0.2362,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.5642,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "arousal",
+      "direction": "-",
+      "peak": 0.1153,
+      "via": "acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> arousal -> dopamine_reward",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "oxygen_deficit",
+      "direction": "+",
+      "peak": 0.1232,
+      "via": "pain -> crh -> acth -> cortisol -> thyroid -> co2_load -> ventilation -> oxygen_deficit",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "crh",
+      "direction": "-",
+      "peak": 0.2154,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "acid_load",
+      "direction": "+",
+      "peak": 0.2032,
+      "via": "cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> ventilation -> co2_load -> acid_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.3051,
+      "via": "prostaglandin -> pain -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "acth",
+      "direction": "-",
+      "peak": 0.1483,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "hypoxic_drive",
+      "direction": "+",
+      "peak": 0.194,
+      "via": "cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> ventilation -> co2_load -> hypoxic_drive",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "hrv",
+      "direction": "+",
+      "peak": 0.2197,
+      "via": "acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> parasympathetic -> hrv",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "neuroinflammation",
+      "direction": "-",
+      "peak": 0.2113,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> neuroinflammation",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "aqp2",
+      "direction": "-",
+      "peak": 0.1404,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_morphine_opioid",
+      "entity": "morphine",
+      "module": "catecholamine",
+      "direction": "-",
+      "peak": 0.1099,
+      "via": "crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> catecholamine",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "oxygen_delivery",
+      "direction": "+",
+      "peak": 0.1453,
+      "via": "pain -> crh -> acth -> cortisol -> thyroid -> co2_load -> ventilation -> oxygen_delivery",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "cerebral_flow",
+      "direction": "-",
+      "peak": 0.2044,
+      "via": "cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> ventilation -> co2_load -> cerebral_flow",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.3362,
+      "via": "acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> arousal -> dopamine_reward",
+      "generic": true
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "mood",
+      "direction": "-",
+      "peak": 0.2288,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> mood",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "adh",
+      "direction": "+",
+      "peak": 0.288,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "osmotic_drive",
+      "direction": "+",
+      "peak": 0.1673,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "co2_load",
+      "direction": "-",
+      "peak": 0.5208,
+      "via": "prostaglandin -> pain -> crh -> acth -> cortisol -> thyroid -> co2_load -> ventilation",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "contractility",
+      "direction": "+",
+      "peak": 0.2302,
+      "via": "nfkb -> prostaglandin -> pain -> sympathetic -> ventilation -> co2_load -> acid_load -> contractility",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "renin",
+      "direction": "+",
+      "peak": 0.1273,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "sodium_load",
+      "direction": "-",
+      "peak": 0.1013,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "headache",
+      "direction": "+",
+      "peak": 0.2427,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> headache",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "cortisol",
+      "direction": "+",
+      "peak": 0.111,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "plasma_vol",
+      "direction": "-",
+      "peak": 0.1228,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.2697,
+      "via": "prostaglandin -> pain -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "baroreceptor",
+      "direction": "+",
+      "peak": 0.1626,
+      "via": "acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> orthostatic_stress -> baroreceptor",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "resp_muscle_fatigue",
+      "direction": "+",
+      "peak": 0.1595,
+      "via": "pain -> crh -> acth -> cortisol -> thyroid -> co2_load -> ventilation -> resp_muscle_fatigue",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "sleep_quality",
+      "direction": "-",
+      "peak": 0.1546,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> sleep_quality",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "sympathetic",
+      "direction": "+",
+      "peak": 0.2121,
+      "via": "acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> parasympathetic -> motility",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "prostaglandin",
+      "direction": "+",
+      "peak": 0.2377,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.3636,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> emetic_drive",
+      "generic": true
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7681,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "arousal",
+      "direction": "+",
+      "peak": 0.1265,
+      "via": "acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> arousal -> dopamine_reward",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "aldosterone",
+      "direction": "+",
+      "peak": 0.1147,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1182,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "crh",
+      "direction": "+",
+      "peak": 0.218,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "acid_load",
+      "direction": "-",
+      "peak": 0.2498,
+      "via": "cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> ventilation -> co2_load -> acid_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4337,
+      "via": "prostaglandin -> pain -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "acth",
+      "direction": "+",
+      "peak": 0.1498,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "hypoxic_drive",
+      "direction": "-",
+      "peak": 0.1561,
+      "via": "cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> ventilation -> co2_load -> hypoxic_drive",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "hrv",
+      "direction": "-",
+      "peak": 0.2656,
+      "via": "acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> parasympathetic -> hrv",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "neuroinflammation",
+      "direction": "+",
+      "peak": 0.2086,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> neuroinflammation",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "gastric_acid",
+      "direction": "-",
+      "peak": 0.1147,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "aqp2",
+      "direction": "+",
+      "peak": 0.1935,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_naloxone_reversal",
+      "entity": "naloxone",
+      "module": "catecholamine",
+      "direction": "+",
+      "peak": 0.1271,
+      "via": "crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> catecholamine",
+      "generic": false
+    },
+    {
+      "scenario": "ho_levothyroxine_thyroid",
+      "entity": "levothyroxine",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2987,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_levothyroxine_thyroid",
+      "entity": "levothyroxine",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3218,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_levothyroxine_thyroid",
+      "entity": "levothyroxine",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_levothyroxine_thyroid",
+      "entity": "levothyroxine",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7804,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_levothyroxine_thyroid",
+      "entity": "levothyroxine",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1294,
+      "via": "orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_levothyroxine_thyroid",
+      "entity": "levothyroxine",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4752,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_heparin_anticoag",
+      "entity": "heparin",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2117,
+      "via": "cognitive -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_heparin_anticoag",
+      "entity": "heparin",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.1881,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_heparin_anticoag",
+      "entity": "heparin",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1459,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_heparin_anticoag",
+      "entity": "heparin",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.514,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_heparin_anticoag",
+      "entity": "heparin",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.2839,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_heparin_anticoag",
+      "entity": "heparin",
+      "module": "consumption_coag",
+      "direction": "-",
+      "peak": 0.1645,
+      "via": "injury -> platelet -> thrombin -> anticoagulant -> consumption_coag",
+      "generic": false
+    },
+    {
+      "scenario": "ho_ondansetron_antiemetic",
+      "entity": "ondansetron",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.3002,
+      "via": "hemorrhage -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_ondansetron_antiemetic",
+      "entity": "ondansetron",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3263,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_ondansetron_antiemetic",
+      "entity": "ondansetron",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7807,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_ondansetron_antiemetic",
+      "entity": "ondansetron",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1334,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_ondansetron_antiemetic",
+      "entity": "ondansetron",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4793,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.306,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "preload",
+      "direction": "-",
+      "peak": 0.1038,
+      "via": "enac -> sodium_load -> osmotic_drive -> adh -> aqp2 -> urine_output -> plasma_vol -> preload",
+      "generic": false
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "adh",
+      "direction": "+",
+      "peak": 0.1306,
+      "via": "nfkb -> systemic_inflammation -> hepatic_load -> albumin -> plasma_vol -> adh -> aqp2 -> urine_output",
+      "generic": false
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "osmotic_drive",
+      "direction": "+",
+      "peak": 0.1087,
+      "via": "kaliuresis -> k_depletion -> renal_acid -> bicarbonate -> acid_load -> enac -> sodium_load -> osmotic_drive",
+      "generic": false
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "renin",
+      "direction": "+",
+      "peak": 0.2167,
+      "via": "kaliuresis -> k_depletion -> renal_acid -> bicarbonate -> acid_load -> enac -> sodium_load -> renin",
+      "generic": false
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "arrhythmia_risk",
+      "direction": "+",
+      "peak": 0.1345,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "plasma_vol",
+      "direction": "-",
+      "peak": 0.2628,
+      "via": "nfkb -> systemic_inflammation -> hepatic_load -> albumin -> plasma_vol -> adh -> aqp2 -> urine_output",
+      "generic": false
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "micturition",
+      "direction": "+",
+      "peak": 0.176,
+      "via": "hepatic_load -> albumin -> plasma_vol -> adh -> aqp2 -> urine_output -> bladder_fill -> micturition",
+      "generic": false
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.2876,
+      "via": "macrophage -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "bladder_fill",
+      "direction": "+",
+      "peak": 0.3003,
+      "via": "systemic_inflammation -> hepatic_load -> albumin -> plasma_vol -> adh -> aqp2 -> urine_output -> bladder_fill",
+      "generic": false
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.2029,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pain -> emetic_drive",
+      "generic": true
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7699,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1252,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "acid_load",
+      "direction": "+",
+      "peak": 0.1327,
+      "via": "potassium_shift -> kaliuresis -> k_depletion -> renal_acid -> bicarbonate -> acid_load -> enac -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4421,
+      "via": "nfkb -> systemic_inflammation -> hepatic_load -> albumin -> plasma_vol -> adh -> aqp2 -> urine_output",
+      "generic": true
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "renal_acid",
+      "direction": "+",
+      "peak": 0.1053,
+      "via": "potassium_shift -> kaliuresis -> k_depletion -> renal_acid -> bicarbonate -> acid_load -> enac -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "angiotensin",
+      "direction": "+",
+      "peak": 0.1279,
+      "via": "k_depletion -> renal_acid -> bicarbonate -> acid_load -> enac -> sodium_load -> renin -> angiotensin",
+      "generic": false
+    },
+    {
+      "scenario": "ho_furosemide_loop",
+      "entity": "furosemide",
+      "module": "potassium_shift",
+      "direction": "-",
+      "peak": 0.1024,
+      "via": "potassium_shift -> kaliuresis -> k_depletion -> renal_acid -> bicarbonate -> acid_load -> enac -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "vwf",
+      "direction": "+",
+      "peak": 0.1051,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "pyrogen",
+      "direction": "+",
+      "peak": 0.4065,
+      "via": "resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pyrogen",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.32,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "endothelial_activation",
+      "direction": "+",
+      "peak": 0.1776,
+      "via": "resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> endothelial_activation",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "adh",
+      "direction": "+",
+      "peak": 0.101,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "macrophage",
+      "direction": "+",
+      "peak": 0.1816,
+      "via": "tcell -> resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> macrophage",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "gnrh",
+      "direction": "+",
+      "peak": 0.2172,
+      "via": "resolution -> nfkb -> il6 -> crh -> acth -> cortisol -> gnrh -> gonadotropin",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "renin",
+      "direction": "+",
+      "peak": 0.2161,
+      "via": "acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load -> renin",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "plasma_vol",
+      "direction": "-",
+      "peak": 0.2577,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> urine_output -> plasma_vol",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "nk_cell",
+      "direction": "+",
+      "peak": 0.2005,
+      "via": "tcell -> resolution -> nfkb -> il6 -> crh -> acth -> cortisol -> nk_cell",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "micturition",
+      "direction": "+",
+      "peak": 0.1629,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3905,
+      "via": "resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "bcell",
+      "direction": "+",
+      "peak": 0.1073,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "platelet",
+      "direction": "+",
+      "peak": 0.104,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "thrombin",
+      "direction": "+",
+      "peak": 0.1057,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "bladder_fill",
+      "direction": "+",
+      "peak": 0.2829,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> urine_output -> bladder_fill",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "endothelin",
+      "direction": "+",
+      "peak": 0.1225,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "sympathetic",
+      "direction": "+",
+      "peak": 0.1182,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "tnf",
+      "direction": "+",
+      "peak": 0.2729,
+      "via": "resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pyrogen",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "prostaglandin",
+      "direction": "+",
+      "peak": 0.2121,
+      "via": "tcell -> resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.2235,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pain -> emetic_drive",
+      "generic": true
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "thermosensor",
+      "direction": "+",
+      "peak": 0.2847,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "shivering",
+      "direction": "+",
+      "peak": 0.1219,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "sweat",
+      "direction": "+",
+      "peak": 0.1754,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1412,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "crh",
+      "direction": "+",
+      "peak": 0.2482,
+      "via": "resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "systemic_inflammation",
+      "direction": "+",
+      "peak": 0.2701,
+      "via": "resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.5159,
+      "via": "resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "il1",
+      "direction": "+",
+      "peak": 0.2642,
+      "via": "tcell -> resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> il1",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "lymphocyte_traffic",
+      "direction": "+",
+      "peak": 0.1532,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "il6",
+      "direction": "+",
+      "peak": 0.2323,
+      "via": "resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "dendritic",
+      "direction": "+",
+      "peak": 0.1274,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "acth",
+      "direction": "+",
+      "peak": 0.173,
+      "via": "resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "pain",
+      "direction": "+",
+      "peak": 0.1198,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> tnf -> pain -> emetic_drive",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "anticoagulant",
+      "direction": "-",
+      "peak": 0.1261,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "neuroinflammation",
+      "direction": "+",
+      "peak": 0.1691,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "orthostatic_stress",
+      "direction": "+",
+      "peak": 0.1528,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "crp",
+      "direction": "+",
+      "peak": 0.2002,
+      "via": "resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> il1 -> crp",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "resolution",
+      "direction": "+",
+      "peak": 0.1833,
+      "via": "resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "angiotensin",
+      "direction": "+",
+      "peak": 0.1268,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "preoptic",
+      "direction": "+",
+      "peak": 0.1027,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "potassium_shift",
+      "direction": "+",
+      "peak": 0.252,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "skin_bloodflow",
+      "direction": "+",
+      "peak": 0.2584,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_spironolactone_ksparing",
+      "entity": "spironolactone",
+      "module": "consumption_coag",
+      "direction": "+",
+      "peak": 0.1702,
+      "via": "resolution -> il6 -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> consumption_coag",
+      "generic": false
+    },
+    {
+      "scenario": "ho_losartan_arb",
+      "entity": "losartan",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.256,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_losartan_arb",
+      "entity": "losartan",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.2078,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_losartan_arb",
+      "entity": "losartan",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1731,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_losartan_arb",
+      "entity": "losartan",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.6185,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_losartan_arb",
+      "entity": "losartan",
+      "module": "kaliuresis",
+      "direction": "-",
+      "peak": 0.2692,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_losartan_arb",
+      "entity": "losartan",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.3332,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_losartan_arb",
+      "entity": "losartan",
+      "module": "urine_output",
+      "direction": "+",
+      "peak": 0.1151,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> urine_output -> bladder_fill",
+      "generic": false
+    },
+    {
+      "scenario": "ho_losartan_arb",
+      "entity": "losartan",
+      "module": "enac",
+      "direction": "-",
+      "peak": 0.4557,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_losartan_arb",
+      "entity": "losartan",
+      "module": "potassium_shift",
+      "direction": "+",
+      "peak": 0.2241,
+      "via": "renal_acid -> acid_load -> kaliuresis -> k_depletion -> potassium_shift -> aldosterone -> enac -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.3081,
+      "via": "apnea -> catecholamine -> airway -> oxygen_deficit -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3317,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "mucus",
+      "direction": "+",
+      "peak": 0.1066,
+      "via": "co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway -> mucus",
+      "generic": false
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "pulmonary_vr",
+      "direction": "+",
+      "peak": 0.1044,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> airway -> oxygen_deficit -> pulmonary_vr",
+      "generic": false
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "fatty_acid",
+      "direction": "-",
+      "peak": 0.2911,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> fatty_acid -> vldl",
+      "generic": false
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1389,
+      "via": "airway -> oxygen_deficit -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "oxygen_deficit",
+      "direction": "+",
+      "peak": 0.1825,
+      "via": "airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> ketogenesis -> acid_load -> contractility",
+      "generic": false
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4808,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "hypoxic_drive",
+      "direction": "+",
+      "peak": 0.139,
+      "via": "co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway -> cough",
+      "generic": false
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "vldl",
+      "direction": "-",
+      "peak": 0.1029,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> fatty_acid -> vldl",
+      "generic": false
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "cough",
+      "direction": "+",
+      "peak": 0.2665,
+      "via": "co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway -> cough",
+      "generic": false
+    },
+    {
+      "scenario": "ho_metoprolol_beta1",
+      "entity": "metoprolol",
+      "module": "ketogenesis",
+      "direction": "-",
+      "peak": 0.13,
+      "via": "airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> ketogenesis -> acid_load -> contractility",
+      "generic": false
+    },
+    {
+      "scenario": "ho_donepezil_ache",
+      "entity": "donepezil",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.3031,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_donepezil_ache",
+      "entity": "donepezil",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3175,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_donepezil_ache",
+      "entity": "donepezil",
+      "module": "motility",
+      "direction": "+",
+      "peak": 0.1306,
+      "via": "co2_load -> ventilation -> oxygen_deficit -> sympathetic -> orthostatic_stress -> baroreceptor -> parasympathetic -> motility",
+      "generic": false
+    },
+    {
+      "scenario": "ho_donepezil_ache",
+      "entity": "donepezil",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_donepezil_ache",
+      "entity": "donepezil",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7801,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_donepezil_ache",
+      "entity": "donepezil",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1263,
+      "via": "orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_donepezil_ache",
+      "entity": "donepezil",
+      "module": "mental_fatigue",
+      "direction": "+",
+      "peak": 0.1346,
+      "via": "sleep -> sleep_pressure -> mental_fatigue -> cognitive_load -> atp_demand -> fatigue",
+      "generic": false
+    },
+    {
+      "scenario": "ho_donepezil_ache",
+      "entity": "donepezil",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4744,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_donepezil_ache",
+      "entity": "donepezil",
+      "module": "hrv",
+      "direction": "+",
+      "peak": 0.3297,
+      "via": "co2_load -> ventilation -> oxygen_deficit -> sympathetic -> orthostatic_stress -> baroreceptor -> parasympathetic -> hrv",
+      "generic": false
+    },
+    {
+      "scenario": "ho_donepezil_ache",
+      "entity": "donepezil",
+      "module": "gastric_acid",
+      "direction": "+",
+      "peak": 0.1306,
+      "via": "co2_load -> ventilation -> oxygen_deficit -> sympathetic -> orthostatic_stress -> baroreceptor -> parasympathetic -> gastric_acid",
+      "generic": false
+    },
+    {
+      "scenario": "ho_donepezil_ache",
+      "entity": "donepezil",
+      "module": "cerebral_metabolism",
+      "direction": "+",
+      "peak": 0.1352,
+      "via": "sleep -> sleep_pressure -> mental_fatigue -> cognitive_load -> cerebral_metabolism",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "mood",
+      "direction": "-",
+      "peak": 0.1649,
+      "via": "acth -> cortisol -> il10 -> resolution -> nfkb -> prostaglandin -> pain -> mood",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "adh",
+      "direction": "+",
+      "peak": 0.2307,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "osmotic_drive",
+      "direction": "+",
+      "peak": 0.1308,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "contractility",
+      "direction": "+",
+      "peak": 0.1197,
+      "via": "cortisol -> il10 -> resolution -> nfkb -> prostaglandin -> pain -> sympathetic -> contractility",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "renin",
+      "direction": "+",
+      "peak": 0.1223,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "headache",
+      "direction": "+",
+      "peak": 0.1772,
+      "via": "acth -> cortisol -> il10 -> resolution -> nfkb -> prostaglandin -> pain -> headache",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3408,
+      "via": "pain -> crh -> acth -> cortisol -> il10 -> resolution -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "sleep_quality",
+      "direction": "-",
+      "peak": 0.1141,
+      "via": "acth -> cortisol -> il10 -> resolution -> nfkb -> prostaglandin -> pain -> sleep_quality",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "sympathetic",
+      "direction": "+",
+      "peak": 0.161,
+      "via": "cortisol -> il10 -> resolution -> nfkb -> prostaglandin -> pain -> sympathetic -> arousal",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "prostaglandin",
+      "direction": "+",
+      "peak": 0.1838,
+      "via": "crh -> acth -> cortisol -> il10 -> resolution -> nfkb -> prostaglandin -> pain",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.3174,
+      "via": "acth -> cortisol -> il10 -> resolution -> nfkb -> prostaglandin -> pain -> emetic_drive",
+      "generic": true
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "aldosterone",
+      "direction": "+",
+      "peak": 0.1184,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1389,
+      "via": "crh -> acth -> cortisol -> il10 -> resolution -> systemic_inflammation -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "crh",
+      "direction": "+",
+      "peak": 0.1486,
+      "via": "crh -> acth -> cortisol -> il10 -> resolution -> nfkb -> prostaglandin -> pain",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.49,
+      "via": "pain -> crh -> acth -> cortisol -> il10 -> resolution -> systemic_inflammation -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "acth",
+      "direction": "+",
+      "peak": 0.1023,
+      "via": "crh -> acth -> cortisol -> il10 -> resolution -> nfkb -> prostaglandin -> pain",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "neuroinflammation",
+      "direction": "+",
+      "peak": 0.1727,
+      "via": "acth -> cortisol -> il10 -> resolution -> nfkb -> prostaglandin -> pain -> neuroinflammation",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "cerebral_metabolism",
+      "direction": "+",
+      "peak": 0.1278,
+      "via": "il10 -> resolution -> nfkb -> prostaglandin -> pain -> sympathetic -> arousal -> cerebral_metabolism",
+      "generic": false
+    },
+    {
+      "scenario": "ho_orlistat_lipase",
+      "entity": "orlistat",
+      "module": "aqp2",
+      "direction": "+",
+      "peak": 0.1609,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2982,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "preload",
+      "direction": "-",
+      "peak": 0.1351,
+      "via": "enac -> sodium_load -> osmotic_drive -> adh -> aqp2 -> urine_output -> plasma_vol -> preload",
+      "generic": false
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "adh",
+      "direction": "+",
+      "peak": 0.3786,
+      "via": "lipogenesis -> hepatic_load -> albumin -> plasma_vol -> osmotic_drive -> adh -> aqp2 -> urine_output",
+      "generic": false
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "osmotic_drive",
+      "direction": "+",
+      "peak": 0.4697,
+      "via": "lipogenesis -> hepatic_load -> albumin -> plasma_vol -> osmotic_drive -> adh -> aqp2 -> urine_output",
+      "generic": false
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "renin",
+      "direction": "+",
+      "peak": 0.1254,
+      "via": "renin -> angiotensin -> aldosterone -> kaliuresis -> k_depletion -> renal_acid -> acid_load -> bicarbonate",
+      "generic": false
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "plasma_vol",
+      "direction": "-",
+      "peak": 0.3365,
+      "via": "lipogenesis -> hepatic_load -> albumin -> plasma_vol -> osmotic_drive -> adh -> aqp2 -> urine_output",
+      "generic": false
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "micturition",
+      "direction": "+",
+      "peak": 0.2309,
+      "via": "albumin -> plasma_vol -> osmotic_drive -> adh -> aqp2 -> urine_output -> bladder_fill -> micturition",
+      "generic": false
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3317,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "bladder_fill",
+      "direction": "+",
+      "peak": 0.3902,
+      "via": "hepatic_load -> albumin -> plasma_vol -> osmotic_drive -> adh -> aqp2 -> urine_output -> bladder_fill",
+      "generic": false
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1378,
+      "via": "orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "acid_load",
+      "direction": "+",
+      "peak": 0.2148,
+      "via": "renin -> angiotensin -> aldosterone -> kaliuresis -> k_depletion -> renal_acid -> acid_load -> bicarbonate",
+      "generic": false
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4818,
+      "via": "lipogenesis -> hepatic_load -> albumin -> plasma_vol -> osmotic_drive -> adh -> aqp2 -> urine_output",
+      "generic": true
+    },
+    {
+      "scenario": "ho_acetazolamide_ca",
+      "entity": "acetazolamide",
+      "module": "aqp2",
+      "direction": "+",
+      "peak": 0.2635,
+      "via": "lipogenesis -> hepatic_load -> albumin -> plasma_vol -> osmotic_drive -> adh -> aqp2 -> urine_output",
+      "generic": false
+    },
+    {
+      "scenario": "ho_caffeine_adenosine",
+      "entity": "caffeine",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.4051,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_caffeine_adenosine",
+      "entity": "caffeine",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3484,
+      "via": "allergen -> dendritic -> tcell -> resolution -> nfkb -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ho_caffeine_adenosine",
+      "entity": "caffeine",
+      "module": "deep_sleep",
+      "direction": "-",
+      "peak": 0.1254,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_caffeine_adenosine",
+      "entity": "caffeine",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.2053,
+      "via": "allergen -> dendritic -> tcell -> resolution -> nfkb -> tnf -> pain -> emetic_drive",
+      "generic": true
+    },
+    {
+      "scenario": "ho_caffeine_adenosine",
+      "entity": "caffeine",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7811,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_caffeine_adenosine",
+      "entity": "caffeine",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1423,
+      "via": "allergen -> dendritic -> tcell -> resolution -> nfkb -> systemic_inflammation -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_caffeine_adenosine",
+      "entity": "caffeine",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4937,
+      "via": "allergen -> dendritic -> tcell -> resolution -> nfkb -> systemic_inflammation -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_caffeine_adenosine",
+      "entity": "caffeine",
+      "module": "cerebral_metabolism",
+      "direction": "+",
+      "peak": 0.1476,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "venous_return",
+      "direction": "+",
+      "peak": 0.1573,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "lipolysis",
+      "direction": "+",
+      "peak": 0.1354,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> lipolysis -> fatty_acid",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.3911,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "contractility",
+      "direction": "+",
+      "peak": 0.3963,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3375,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "baroreceptor",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "renal_bloodflow",
+      "direction": "-",
+      "peak": 0.1794,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "peripheral_perfusion",
+      "direction": "-",
+      "peak": 0.1346,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "orexin",
+      "direction": "+",
+      "peak": 0.2089,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7811,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "arousal",
+      "direction": "+",
+      "peak": 0.3126,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.141,
+      "via": "orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "muscle_glycogen",
+      "direction": "-",
+      "peak": 0.1008,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> muscle_glycogen",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4781,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "browning",
+      "direction": "+",
+      "peak": 0.1925,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "splanchnic_flow",
+      "direction": "-",
+      "peak": 0.1453,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "glycogenolysis",
+      "direction": "+",
+      "peak": 0.136,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glycogenolysis",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "orthostatic_stress",
+      "direction": "-",
+      "peak": 0.1574,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "cerebral_metabolism",
+      "direction": "+",
+      "peak": 0.128,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> cerebral_metabolism",
+      "generic": false
+    },
+    {
+      "scenario": "ho_nicotine_symp",
+      "entity": "nicotine",
+      "module": "catecholamine",
+      "direction": "+",
+      "peak": 0.3141,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.207,
+      "via": "acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> arousal -> dopamine_reward",
+      "generic": true
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "mood",
+      "direction": "+",
+      "peak": 0.1688,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> mood",
+      "generic": false
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "headache",
+      "direction": "-",
+      "peak": 0.1755,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> headache",
+      "generic": false
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3229,
+      "via": "prostaglandin -> pain -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "sleep_quality",
+      "direction": "+",
+      "peak": 0.1141,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> sleep_quality",
+      "generic": false
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "sympathetic",
+      "direction": "-",
+      "peak": 0.1604,
+      "via": "crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> contractility",
+      "generic": false
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "prostaglandin",
+      "direction": "-",
+      "peak": 0.1685,
+      "via": "crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> contractility",
+      "generic": false
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7803,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1293,
+      "via": "pain -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "crh",
+      "direction": "-",
+      "peak": 0.153,
+      "via": "crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> contractility",
+      "generic": false
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4785,
+      "via": "prostaglandin -> pain -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "acth",
+      "direction": "-",
+      "peak": 0.1056,
+      "via": "crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> contractility",
+      "generic": false
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "neuroinflammation",
+      "direction": "-",
+      "peak": 0.1529,
+      "via": "il6 -> crh -> acth -> cortisol -> nfkb -> prostaglandin -> pain -> neuroinflammation",
+      "generic": false
+    },
+    {
+      "scenario": "ho_gabapentin_a2d",
+      "entity": "gabapentin",
+      "module": "cerebral_metabolism",
+      "direction": "-",
+      "peak": 0.1274,
+      "via": "acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> arousal -> cerebral_metabolism",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "vwf",
+      "direction": "-",
+      "peak": 0.1804,
+      "via": "dendritic -> tcell -> il10 -> resolution -> nfkb -> tnf -> endothelial_activation -> vwf",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2676,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "leukocyte",
+      "direction": "-",
+      "peak": 0.2391,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "mood",
+      "direction": "+",
+      "peak": 0.2024,
+      "via": "dendritic -> tcell -> il10 -> resolution -> nfkb -> prostaglandin -> pain -> mood",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "endothelial_activation",
+      "direction": "-",
+      "peak": 0.3052,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> tnf -> endothelial_activation",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "tcell",
+      "direction": "-",
+      "peak": 0.1458,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> prostaglandin -> pyrogen",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "macrophage",
+      "direction": "-",
+      "peak": 0.317,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "contractility",
+      "direction": "-",
+      "peak": 0.181,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "sodium_load",
+      "direction": "+",
+      "peak": 0.3784,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> prostaglandin -> sodium_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "headache",
+      "direction": "-",
+      "peak": 0.1323,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "plasma_vol",
+      "direction": "+",
+      "peak": 0.1907,
+      "via": "dendritic -> tcell -> il10 -> resolution -> nfkb -> prostaglandin -> urine_output -> plasma_vol",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "nk_cell",
+      "direction": "-",
+      "peak": 0.1149,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "fibrin",
+      "direction": "+",
+      "peak": 0.1893,
+      "via": "tcell -> il10 -> resolution -> nfkb -> tnf -> platelet -> thrombin -> fibrin",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "micturition",
+      "direction": "-",
+      "peak": 0.1222,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.2252,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "baroreceptor",
+      "direction": "-",
+      "peak": 0.1054,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "peripheral_perfusion",
+      "direction": "-",
+      "peak": 0.2454,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "il10",
+      "direction": "-",
+      "peak": 0.1577,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> prostaglandin -> pyrogen",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "thrombin",
+      "direction": "+",
+      "peak": 0.3607,
+      "via": "tcell -> il10 -> resolution -> nfkb -> tnf -> platelet -> thrombin -> coronary_flow",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "interferon",
+      "direction": "-",
+      "peak": 0.1476,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "bladder_fill",
+      "direction": "-",
+      "peak": 0.2125,
+      "via": "dendritic -> tcell -> il10 -> resolution -> nfkb -> prostaglandin -> urine_output -> bladder_fill",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "endothelin",
+      "direction": "-",
+      "peak": 0.1642,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "orexin",
+      "direction": "-",
+      "peak": 0.1023,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "sympathetic",
+      "direction": "-",
+      "peak": 0.2528,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "tnf",
+      "direction": "-",
+      "peak": 0.4722,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> tnf -> platelet",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1297,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "thermosensor",
+      "direction": "-",
+      "peak": 0.9251,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "shivering",
+      "direction": "+",
+      "peak": 0.1828,
+      "via": "dendritic -> tcell -> il10 -> resolution -> nfkb -> prostaglandin -> pyrogen -> shivering",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "arousal",
+      "direction": "-",
+      "peak": 0.1517,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1191,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "crh",
+      "direction": "-",
+      "peak": 0.1825,
+      "via": "dendritic -> tcell -> il10 -> resolution -> nfkb -> prostaglandin -> pain -> crh",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "neutrophil",
+      "direction": "-",
+      "peak": 0.3148,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "piloerection",
+      "direction": "+",
+      "peak": 0.5667,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "systemic_inflammation",
+      "direction": "-",
+      "peak": 0.4729,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "lymph_drainage",
+      "direction": "-",
+      "peak": 0.1178,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.3944,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "nitric_oxide",
+      "direction": "+",
+      "peak": 0.1232,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "urine_output",
+      "direction": "-",
+      "peak": 0.3719,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> prostaglandin -> urine_output",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "browning",
+      "direction": "+",
+      "peak": 0.2249,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "il1",
+      "direction": "-",
+      "peak": 0.448,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> il1 -> crp",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "il6",
+      "direction": "-",
+      "peak": 0.4017,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "dendritic",
+      "direction": "-",
+      "peak": 0.2179,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> prostaglandin -> pyrogen",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "acth",
+      "direction": "-",
+      "peak": 0.1266,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "pain",
+      "direction": "-",
+      "peak": 0.444,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> prostaglandin -> pain",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "hrv",
+      "direction": "+",
+      "peak": 0.1384,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "insulin_resistance",
+      "direction": "-",
+      "peak": 0.1369,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "neuroinflammation",
+      "direction": "-",
+      "peak": 0.3666,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> tnf -> neuroinflammation",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "orthostatic_stress",
+      "direction": "-",
+      "peak": 0.218,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "crp",
+      "direction": "-",
+      "peak": 0.3467,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> il1 -> crp",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "resolution",
+      "direction": "-",
+      "peak": 0.257,
+      "via": "allergen -> dendritic -> tcell -> il10 -> resolution -> nfkb -> prostaglandin -> pyrogen",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "preoptic",
+      "direction": "-",
+      "peak": 0.5506,
+      "via": "dendritic -> tcell -> il10 -> resolution -> nfkb -> prostaglandin -> pyrogen -> preoptic",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "syncope_risk",
+      "direction": "-",
+      "peak": 0.1326,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "barrier_damage",
+      "direction": "-",
+      "peak": 0.1312,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "skin_bloodflow",
+      "direction": "-",
+      "peak": 0.7376,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "consumption_coag",
+      "direction": "-",
+      "peak": 0.1183,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "protein_breakdown",
+      "direction": "-",
+      "peak": 0.1462,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_celecoxib_cox2",
+      "entity": "celecoxib",
+      "module": "catecholamine",
+      "direction": "-",
+      "peak": 0.1355,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_rosiglitazone_pparg",
+      "entity": "rosiglitazone",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.3001,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_rosiglitazone_pparg",
+      "entity": "rosiglitazone",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3317,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_rosiglitazone_pparg",
+      "entity": "rosiglitazone",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_rosiglitazone_pparg",
+      "entity": "rosiglitazone",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_rosiglitazone_pparg",
+      "entity": "rosiglitazone",
+      "module": "muscle_glucose_uptake",
+      "direction": "+",
+      "peak": 0.1382,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> lipolysis -> insulin_resistance -> muscle_glucose_uptake",
+      "generic": false
+    },
+    {
+      "scenario": "ho_rosiglitazone_pparg",
+      "entity": "rosiglitazone",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1879,
+      "via": "orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_rosiglitazone_pparg",
+      "entity": "rosiglitazone",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.6809,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_rosiglitazone_pparg",
+      "entity": "rosiglitazone",
+      "module": "cholesterol_syn",
+      "direction": "+",
+      "peak": 0.1148,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> cholesterol_syn",
+      "generic": false
+    },
+    {
+      "scenario": "ho_carvedilol_beta_alpha",
+      "entity": "carvedilol",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.299,
+      "via": "cognitive -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_carvedilol_beta_alpha",
+      "entity": "carvedilol",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3317,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_carvedilol_beta_alpha",
+      "entity": "carvedilol",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_carvedilol_beta_alpha",
+      "entity": "carvedilol",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_carvedilol_beta_alpha",
+      "entity": "carvedilol",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1378,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_carvedilol_beta_alpha",
+      "entity": "carvedilol",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4818,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "oxygen_delivery",
+      "direction": "-",
+      "peak": 0.1243,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> airway -> oxygen_deficit -> oxygen_delivery",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.312,
+      "via": "apnea -> catecholamine -> airway -> oxygen_deficit -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "oxidation",
+      "direction": "-",
+      "peak": 0.1155,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> fatty_acid -> oxidation",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "co2_load",
+      "direction": "+",
+      "peak": 0.1415,
+      "via": "co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway -> cough",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "ventilation",
+      "direction": "-",
+      "peak": 0.1416,
+      "via": "co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway -> cough",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3317,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "mucus",
+      "direction": "+",
+      "peak": 0.1523,
+      "via": "co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway -> mucus",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "pulmonary_vr",
+      "direction": "+",
+      "peak": 0.149,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> airway -> oxygen_deficit -> pulmonary_vr",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "fatty_acid",
+      "direction": "-",
+      "peak": 0.4151,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> fatty_acid -> vldl",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1393,
+      "via": "airway -> oxygen_deficit -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "oxygen_deficit",
+      "direction": "+",
+      "peak": 0.2607,
+      "via": "airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> ketogenesis -> acid_load -> arrhythmia_risk",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4805,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "hypoxic_drive",
+      "direction": "+",
+      "peak": 0.1986,
+      "via": "co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway -> cough",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "insulin_resistance",
+      "direction": "-",
+      "peak": 0.1324,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> insulin_resistance -> muscle_glucose_uptake",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "vldl",
+      "direction": "-",
+      "peak": 0.1461,
+      "via": "rx_airway -> airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> fatty_acid -> vldl",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "cough",
+      "direction": "+",
+      "peak": 0.3797,
+      "via": "co2_load -> hypoxic_drive -> ventilation -> oxygen_deficit -> sympathetic -> catecholamine -> airway -> cough",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "epo",
+      "direction": "+",
+      "peak": 0.1266,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> airway -> oxygen_deficit -> epo",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "ketogenesis",
+      "direction": "-",
+      "peak": 0.1851,
+      "via": "airway -> oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> ketogenesis -> acid_load -> arrhythmia_risk",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "lactate",
+      "direction": "+",
+      "peak": 0.1249,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> catecholamine -> airway -> oxygen_deficit -> lactate",
+      "generic": false
+    },
+    {
+      "scenario": "ho_sotalol_herg",
+      "entity": "sotalol",
+      "module": "syncope_risk",
+      "direction": "+",
+      "peak": 0.1365,
+      "via": "oxygen_deficit -> sympathetic -> catecholamine -> lipolysis -> ketogenesis -> acid_load -> arrhythmia_risk -> syncope_risk",
+      "generic": false
+    },
+    {
+      "scenario": "ho_aprepitant_nk1",
+      "entity": "aprepitant",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.299,
+      "via": "cognitive -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_aprepitant_nk1",
+      "entity": "aprepitant",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3317,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_aprepitant_nk1",
+      "entity": "aprepitant",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_aprepitant_nk1",
+      "entity": "aprepitant",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1378,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_aprepitant_nk1",
+      "entity": "aprepitant",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4818,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_ezetimibe_npc1l1",
+      "entity": "ezetimibe",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.299,
+      "via": "cognitive -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_ezetimibe_npc1l1",
+      "entity": "ezetimibe",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3317,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_ezetimibe_npc1l1",
+      "entity": "ezetimibe",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_ezetimibe_npc1l1",
+      "entity": "ezetimibe",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_ezetimibe_npc1l1",
+      "entity": "ezetimibe",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1378,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_ezetimibe_npc1l1",
+      "entity": "ezetimibe",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4818,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_desmopressin_v2",
+      "entity": "desmopressin",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2992,
+      "via": "heat_signal -> orthostatic_stress -> baroreceptor -> sympathetic -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_desmopressin_v2",
+      "entity": "desmopressin",
+      "module": "osmotic_drive",
+      "direction": "-",
+      "peak": 0.1068,
+      "via": "plasma_vol -> renin -> angiotensin -> aldosterone -> urine_output -> osmotic_drive -> adh -> aqp2",
+      "generic": false
+    },
+    {
+      "scenario": "ho_desmopressin_v2",
+      "entity": "desmopressin",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3317,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_desmopressin_v2",
+      "entity": "desmopressin",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_desmopressin_v2",
+      "entity": "desmopressin",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_desmopressin_v2",
+      "entity": "desmopressin",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1378,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_desmopressin_v2",
+      "entity": "desmopressin",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4817,
+      "via": "hepatic_load -> albumin -> plasma_vol -> osmotic_drive -> adh -> aqp2 -> urine_output -> bladder_fill",
+      "generic": true
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "oxygen_delivery",
+      "direction": "-",
+      "peak": 0.1642,
+      "via": "pain -> crh -> acth -> cortisol -> thyroid -> co2_load -> ventilation -> oxygen_delivery",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "cerebral_flow",
+      "direction": "+",
+      "peak": 0.1814,
+      "via": "sympathetic -> catecholamine -> airway -> oxygen_deficit -> hypoxic_drive -> ventilation -> co2_load -> cerebral_flow",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.2956,
+      "via": "acth -> cortisol -> nfkb -> prostaglandin -> pain -> sympathetic -> arousal -> dopamine_reward",
+      "generic": true
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "adh",
+      "direction": "-",
+      "peak": 0.1542,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "osmotic_drive",
+      "direction": "-",
+      "peak": 0.169,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "co2_load",
+      "direction": "+",
+      "peak": 0.4739,
+      "via": "prostaglandin -> pain -> crh -> acth -> cortisol -> thyroid -> co2_load -> ventilation",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "renin",
+      "direction": "-",
+      "peak": 0.1306,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.328,
+      "via": "prostaglandin -> pain -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> glutathione",
+      "generic": true
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "resp_muscle_fatigue",
+      "direction": "-",
+      "peak": 0.121,
+      "via": "pain -> crh -> acth -> cortisol -> thyroid -> co2_load -> ventilation -> resp_muscle_fatigue",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "pulmonary_vr",
+      "direction": "+",
+      "peak": 0.1134,
+      "via": "catecholamine -> airway -> oxygen_deficit -> hypoxic_drive -> ventilation -> co2_load -> acid_load -> pulmonary_vr",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7807,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "aldosterone",
+      "direction": "-",
+      "peak": 0.1409,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1348,
+      "via": "pain -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "oxygen_deficit",
+      "direction": "+",
+      "peak": 0.1291,
+      "via": "sympathetic -> catecholamine -> airway -> oxygen_deficit -> hypoxic_drive -> ventilation -> co2_load -> acid_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "acid_load",
+      "direction": "+",
+      "peak": 0.2464,
+      "via": "sympathetic -> catecholamine -> airway -> oxygen_deficit -> hypoxic_drive -> ventilation -> co2_load -> acid_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.48,
+      "via": "prostaglandin -> pain -> crh -> acth -> cortisol -> nfkb -> systemic_inflammation -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "renal_acid",
+      "direction": "+",
+      "peak": 0.105,
+      "via": "catecholamine -> airway -> oxygen_deficit -> hypoxic_drive -> ventilation -> co2_load -> acid_load -> renal_acid",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "hypoxic_drive",
+      "direction": "+",
+      "peak": 0.2193,
+      "via": "sympathetic -> catecholamine -> airway -> oxygen_deficit -> hypoxic_drive -> ventilation -> co2_load -> acid_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "hrv",
+      "direction": "+",
+      "peak": 0.1665,
+      "via": "nfkb -> prostaglandin -> pain -> sympathetic -> orthostatic_stress -> baroreceptor -> parasympathetic -> hrv",
+      "generic": false
+    },
+    {
+      "scenario": "ho_tramadol_opioid_sert",
+      "entity": "tramadol",
+      "module": "aqp2",
+      "direction": "-",
+      "peak": 0.1033,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "vwf",
+      "direction": "-",
+      "peak": 0.1397,
+      "via": "rx_histamine -> histamine -> endothelial_activation -> vwf -> thrombin -> fibrin",
+      "generic": false
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.1438,
+      "via": "rx_histamine -> histamine -> orexin -> arousal -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "pruritus",
+      "direction": "-",
+      "peak": 0.4636,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "endothelial_activation",
+      "direction": "-",
+      "peak": 0.2332,
+      "via": "rx_histamine -> histamine -> endothelial_activation -> vwf -> thrombin -> fibrin",
+      "generic": false
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3267,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "endothelin",
+      "direction": "-",
+      "peak": 0.1165,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "orexin",
+      "direction": "-",
+      "peak": 0.2427,
+      "via": "rx_histamine -> histamine -> orexin -> arousal -> cognitive_load -> mental_fatigue",
+      "generic": false
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "deep_sleep",
+      "direction": "+",
+      "peak": 0.1399,
+      "via": "rx_histamine -> histamine -> orexin -> arousal -> deep_sleep -> gh",
+      "generic": false
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.7807,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1338,
+      "via": "skin_bloodflow -> orthostatic_stress -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4798,
+      "via": "histamine -> skin_bloodflow -> orthostatic_stress -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": true
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "airway",
+      "direction": "-",
+      "peak": 0.2298,
+      "via": "rx_histamine -> histamine -> airway -> ventilation -> co2_load -> acid_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "hrv",
+      "direction": "-",
+      "peak": 0.1194,
+      "via": "rx_histamine -> histamine -> skin_bloodflow -> orthostatic_stress -> sympathetic -> parasympathetic -> hrv",
+      "generic": false
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "cough",
+      "direction": "-",
+      "peak": 0.1146,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "cognitive_load",
+      "direction": "-",
+      "peak": 0.144,
+      "via": "rx_histamine -> histamine -> orexin -> arousal -> cognitive_load -> mental_fatigue",
+      "generic": false
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "cerebral_metabolism",
+      "direction": "-",
+      "peak": 0.214,
+      "via": "rx_histamine -> histamine -> orexin -> arousal -> cerebral_metabolism",
+      "generic": false
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "anaphylaxis_risk",
+      "direction": "-",
+      "peak": 0.3104,
+      "via": "",
+      "generic": false
+    },
+    {
+      "scenario": "ho_diphenhydramine_sedation",
+      "entity": "diphenhydramine",
+      "module": "skin_bloodflow",
+      "direction": "-",
+      "peak": 0.2332,
+      "via": "histamine -> skin_bloodflow -> orthostatic_stress -> sympathetic -> catecholamine -> glucagon -> lipogenesis -> hepatic_load",
+      "generic": false
+    },
+    {
+      "scenario": "ho_midodrine_alpha1",
+      "entity": "midodrine",
+      "module": "dopamine_reward",
+      "direction": "+",
+      "peak": 0.299,
+      "via": "cognitive -> dopamine_reward -> carb_craving",
+      "generic": true
+    },
+    {
+      "scenario": "ho_midodrine_alpha1",
+      "entity": "midodrine",
+      "module": "glutathione",
+      "direction": "-",
+      "peak": 0.3317,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_midodrine_alpha1",
+      "entity": "midodrine",
+      "module": "emetic_drive",
+      "direction": "+",
+      "peak": 0.1997,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_midodrine_alpha1",
+      "entity": "midodrine",
+      "module": "cyp450",
+      "direction": "+",
+      "peak": 0.781,
+      "via": "",
+      "generic": true
+    },
+    {
+      "scenario": "ho_midodrine_alpha1",
+      "entity": "midodrine",
+      "module": "bilirubin",
+      "direction": "+",
+      "peak": 0.1378,
+      "via": "drug_exposure -> hepatic_load -> bilirubin",
+      "generic": true
+    },
+    {
+      "scenario": "ho_midodrine_alpha1",
+      "entity": "midodrine",
+      "module": "urinary_stasis",
+      "direction": "+",
+      "peak": 0.1356,
+      "via": "albumin -> plasma_vol -> adh -> aqp2 -> urine_output -> bladder_fill -> micturition -> urinary_stasis",
+      "generic": false
+    },
+    {
+      "scenario": "ho_midodrine_alpha1",
+      "entity": "midodrine",
+      "module": "hepatic_load",
+      "direction": "+",
+      "peak": 0.4818,
+      "via": "hepatic_load -> albumin -> plasma_vol -> adh -> aqp2 -> urine_output -> bladder_fill -> micturition",
+      "generic": true
+    }
+  ]
+}

@@ -1,0 +1,2064 @@
+{
+  "model": "deepseek/deepseek-v4-flash-0731",
+  "scenarios": "benchmark/holdout3.jsonl",
+  "reps": 3,
+  "arms": {
+    "human13": {
+      "hits": 40,
+      "n_expected": 44,
+      "quiet_fp": 0,
+      "decoy_fp": 17,
+      "edges": 44,
+      "edges_supported": 40,
+      "edges_referenced": 40,
+      "reproducible": 28,
+      "errors": 0
+    },
+    "llm_only": {
+      "hits": 13,
+      "n_expected": 13,
+      "quiet_fp": 0,
+      "decoy_fp": 12,
+      "edges": 16,
+      "edges_supported": 2,
+      "edges_referenced": 16,
+      "reproducible": 8,
+      "errors": 74
+    },
+    "llm_grounded": {
+      "hits": 10,
+      "n_expected": 10,
+      "quiet_fp": 0,
+      "decoy_fp": 15,
+      "edges": 23,
+      "edges_supported": 3,
+      "edges_referenced": 21,
+      "reproducible": 8,
+      "errors": 76
+    }
+  },
+  "per_scenario": {
+    "h3_naproxen_nsaid": {
+      "candidates": [
+        "crp",
+        "iron_deficiency",
+        "orthostatic_stress",
+        "platelet",
+        "prostaglandin",
+        "satiety",
+        "sodium_load",
+        "vwf"
+      ],
+      "decoys": [
+        "orthostatic_stress",
+        "vwf",
+        "iron_deficiency",
+        "satiety",
+        "crp"
+      ],
+      "human13": {
+        "crp": "-",
+        "iron_deficiency": "0",
+        "orthostatic_stress": "-",
+        "platelet": "-",
+        "prostaglandin": "-",
+        "satiety": "0",
+        "sodium_load": "+",
+        "vwf": "-"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_enalapril_ace": {
+      "candidates": [
+        "aldosterone",
+        "anaphylaxis_risk",
+        "angiotensin",
+        "bilirubin",
+        "endothelin",
+        "il1",
+        "protease"
+      ],
+      "decoys": [
+        "anaphylaxis_risk",
+        "endothelin",
+        "bilirubin",
+        "il1",
+        "protease"
+      ],
+      "human13": {
+        "aldosterone": "-",
+        "anaphylaxis_risk": "0",
+        "angiotensin": "-",
+        "bilirubin": "+",
+        "endothelin": "-",
+        "il1": "0",
+        "protease": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_valsartan_arb": {
+      "candidates": [
+        "aldosterone",
+        "arrhythmia_risk",
+        "mechanical_load",
+        "peripheral_perfusion",
+        "satiety",
+        "shivering",
+        "tcell"
+      ],
+      "decoys": [
+        "mechanical_load",
+        "tcell",
+        "satiety",
+        "shivering",
+        "arrhythmia_risk"
+      ],
+      "human13": {
+        "aldosterone": "-",
+        "arrhythmia_risk": "0",
+        "mechanical_load": "0",
+        "peripheral_perfusion": "+",
+        "satiety": "0",
+        "shivering": "0",
+        "tcell": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_dutasteride_5ar": {
+      "candidates": [
+        "glucagon",
+        "gonadal_steroid",
+        "milk_production",
+        "nk_cell",
+        "systemic_inflammation",
+        "thermosensor"
+      ],
+      "decoys": [
+        "glucagon",
+        "milk_production",
+        "systemic_inflammation",
+        "nk_cell",
+        "thermosensor"
+      ],
+      "human13": {
+        "glucagon": "0",
+        "gonadal_steroid": "-",
+        "milk_production": "0",
+        "nk_cell": "0",
+        "systemic_inflammation": "0",
+        "thermosensor": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {
+            "glucagon": "0",
+            "gonadal_steroid": "-",
+            "milk_production": "0",
+            "nk_cell": "0",
+            "systemic_inflammation": "0",
+            "thermosensor": "0"
+          },
+          "paths": {
+            "gonadal_steroid": [
+              "gonadal_steroid"
+            ]
+          },
+          "error": null
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_famotidine_h2": {
+      "candidates": [
+        "cough",
+        "gastric_acid",
+        "igf1",
+        "melatonin",
+        "protein_breakdown",
+        "satiety"
+      ],
+      "decoys": [
+        "protein_breakdown",
+        "cough",
+        "melatonin",
+        "satiety",
+        "igf1"
+      ],
+      "human13": {
+        "cough": "0",
+        "gastric_acid": "-",
+        "igf1": "0",
+        "melatonin": "0",
+        "protein_breakdown": "0",
+        "satiety": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {
+            "cough": "0",
+            "gastric_acid": "-",
+            "igf1": "0",
+            "melatonin": "0",
+            "protein_breakdown": "-",
+            "satiety": "0"
+          },
+          "paths": {
+            "gastric_acid": [
+              "gastric_acid"
+            ],
+            "protein_breakdown": [
+              "gastric_acid",
+              "protein_breakdown"
+            ]
+          },
+          "error": null
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_oxybutynin_antimusc": {
+      "candidates": [
+        "amylin",
+        "beta_cell_stress",
+        "gh",
+        "gonadotropin",
+        "mucus",
+        "parasympathetic",
+        "urinary_stasis"
+      ],
+      "decoys": [
+        "gh",
+        "urinary_stasis",
+        "amylin",
+        "beta_cell_stress",
+        "gonadotropin"
+      ],
+      "human13": {
+        "amylin": "0",
+        "beta_cell_stress": "0",
+        "gh": "0",
+        "gonadotropin": "0",
+        "mucus": "-",
+        "parasympathetic": "-",
+        "urinary_stasis": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {
+            "amylin": "0",
+            "beta_cell_stress": "0",
+            "gh": "0",
+            "gonadotropin": "0",
+            "mucus": "-",
+            "parasympathetic": "-",
+            "urinary_stasis": "+"
+          },
+          "paths": {
+            "mucus": [
+              "oxybutynin",
+              "parasympathetic",
+              "mucus"
+            ],
+            "parasympathetic": [
+              "oxybutynin",
+              "parasympathetic"
+            ],
+            "urinary_stasis": [
+              "oxybutynin",
+              "parasympathetic",
+              "urinary_stasis"
+            ]
+          },
+          "error": null
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_phenylephrine_a1": {
+      "candidates": [
+        "fracture_risk",
+        "interferon",
+        "peripheral_perfusion",
+        "scfa",
+        "sympathetic",
+        "vldl"
+      ],
+      "decoys": [
+        "fracture_risk",
+        "scfa",
+        "interferon",
+        "sympathetic",
+        "vldl"
+      ],
+      "human13": {
+        "fracture_risk": "0",
+        "interferon": "0",
+        "peripheral_perfusion": "-",
+        "scfa": "0",
+        "sympathetic": "+",
+        "vldl": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_mirtazapine_appetite": {
+      "candidates": [
+        "amylin",
+        "appetite",
+        "arousal",
+        "cerebral_metabolism",
+        "pain",
+        "platelet",
+        "urine_output"
+      ],
+      "decoys": [
+        "urine_output",
+        "amylin",
+        "platelet",
+        "cerebral_metabolism",
+        "pain"
+      ],
+      "human13": {
+        "amylin": "0",
+        "appetite": "+",
+        "arousal": "+",
+        "cerebral_metabolism": "+",
+        "pain": "-",
+        "platelet": "0",
+        "urine_output": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_pregabalin_a2d": {
+      "candidates": [
+        "catecholamine",
+        "cognitive_load",
+        "histamine",
+        "kaliuresis",
+        "pain",
+        "preload"
+      ],
+      "decoys": [
+        "cognitive_load",
+        "histamine",
+        "preload",
+        "catecholamine",
+        "kaliuresis"
+      ],
+      "human13": {
+        "catecholamine": "0",
+        "cognitive_load": "0",
+        "histamine": "0",
+        "kaliuresis": "0",
+        "pain": "-",
+        "preload": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_ketamine_nmda": {
+      "candidates": [
+        "anp",
+        "beta_cell_stress",
+        "bilirubin",
+        "mtor",
+        "pain",
+        "potassium_shift"
+      ],
+      "decoys": [
+        "anp",
+        "potassium_shift",
+        "bilirubin",
+        "beta_cell_stress",
+        "mtor"
+      ],
+      "human13": {
+        "anp": "0",
+        "beta_cell_stress": "0",
+        "bilirubin": "+",
+        "mtor": "0",
+        "pain": "-",
+        "potassium_shift": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_estradiol_er": {
+      "candidates": [
+        "calcitriol",
+        "consumption_coag",
+        "epo",
+        "gonadal_steroid",
+        "resorption",
+        "shivering",
+        "tsh"
+      ],
+      "decoys": [
+        "tsh",
+        "shivering",
+        "consumption_coag",
+        "calcitriol",
+        "epo"
+      ],
+      "human13": {
+        "calcitriol": "0",
+        "consumption_coag": "0",
+        "epo": "0",
+        "gonadal_steroid": "+",
+        "resorption": "-",
+        "shivering": "0",
+        "tsh": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_acetaminophen_napqi": {
+      "candidates": [
+        "acth",
+        "browning",
+        "crh",
+        "dhea",
+        "formation",
+        "glutathione",
+        "hepatic_load"
+      ],
+      "decoys": [
+        "browning",
+        "formation",
+        "acth",
+        "dhea",
+        "crh"
+      ],
+      "human13": {
+        "acth": "0",
+        "browning": "+",
+        "crh": "+",
+        "dhea": "0",
+        "formation": "0",
+        "glutathione": "-",
+        "hepatic_load": "+"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_adalimumab_tnf": {
+      "candidates": [
+        "cyp450",
+        "endothelin",
+        "gastric_acid",
+        "scar_formation",
+        "tnf",
+        "vitamin_d_synthesis"
+      ],
+      "decoys": [
+        "endothelin",
+        "gastric_acid",
+        "cyp450",
+        "vitamin_d_synthesis",
+        "scar_formation"
+      ],
+      "human13": {
+        "cyp450": "+",
+        "endothelin": "-",
+        "gastric_acid": "0",
+        "scar_formation": "0",
+        "tnf": "-",
+        "vitamin_d_synthesis": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_rituximab_cd20": {
+      "candidates": [
+        "bcell",
+        "complement",
+        "kaliuresis",
+        "muscle_glucose_uptake",
+        "piloerection",
+        "renin"
+      ],
+      "decoys": [
+        "renin",
+        "complement",
+        "muscle_glucose_uptake",
+        "kaliuresis",
+        "piloerection"
+      ],
+      "human13": {
+        "bcell": "-",
+        "complement": "0",
+        "kaliuresis": "0",
+        "muscle_glucose_uptake": "0",
+        "piloerection": "0",
+        "renin": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_rosuvastatin_statin": {
+      "candidates": [
+        "bilirubin",
+        "cholesterol_syn",
+        "erythropoiesis",
+        "mechanical_load",
+        "prostaglandin",
+        "pulmonary_vr"
+      ],
+      "decoys": [
+        "bilirubin",
+        "pulmonary_vr",
+        "erythropoiesis",
+        "prostaglandin",
+        "mechanical_load"
+      ],
+      "human13": {
+        "bilirubin": "+",
+        "cholesterol_syn": "-",
+        "erythropoiesis": "0",
+        "mechanical_load": "0",
+        "prostaglandin": "0",
+        "pulmonary_vr": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {
+            "bilirubin": "0",
+            "cholesterol_syn": "-",
+            "erythropoiesis": "0",
+            "mechanical_load": "0",
+            "prostaglandin": "0",
+            "pulmonary_vr": "0"
+          },
+          "paths": {
+            "cholesterol_syn": [
+              "cholesterol_syn"
+            ]
+          },
+          "error": null
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_oxycodone_opioid": {
+      "candidates": [
+        "airway",
+        "calcitriol",
+        "histamine",
+        "micturition",
+        "motility",
+        "orthostatic_stress",
+        "pain",
+        "ventilation"
+      ],
+      "decoys": [
+        "histamine",
+        "airway",
+        "micturition",
+        "orthostatic_stress",
+        "calcitriol"
+      ],
+      "human13": {
+        "airway": "0",
+        "calcitriol": "0",
+        "histamine": "0",
+        "micturition": "0",
+        "motility": "-",
+        "orthostatic_stress": "0",
+        "pain": "-",
+        "ventilation": "-"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_amiodarone_qt": {
+      "candidates": [
+        "arrhythmia_risk",
+        "glutathione",
+        "gonadal_steroid",
+        "il1",
+        "memory_consolidation",
+        "scfa"
+      ],
+      "decoys": [
+        "scfa",
+        "gonadal_steroid",
+        "glutathione",
+        "memory_consolidation",
+        "il1"
+      ],
+      "human13": {
+        "arrhythmia_risk": "+",
+        "glutathione": "-",
+        "gonadal_steroid": "0",
+        "il1": "0",
+        "memory_consolidation": "0",
+        "scfa": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {
+            "arrhythmia_risk": "+",
+            "glutathione": "0",
+            "gonadal_steroid": "0",
+            "il1": "0",
+            "memory_consolidation": "0",
+            "scfa": "0"
+          },
+          "paths": {
+            "arrhythmia_risk": [
+              "arrhythmia_risk"
+            ]
+          },
+          "error": null
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_neostigmine_ache": {
+      "candidates": [
+        "aldosterone",
+        "bicarbonate",
+        "hrv",
+        "insulin_resistance",
+        "parasympathetic",
+        "vitamin_d_synthesis"
+      ],
+      "decoys": [
+        "aldosterone",
+        "insulin_resistance",
+        "bicarbonate",
+        "hrv",
+        "vitamin_d_synthesis"
+      ],
+      "human13": {
+        "aldosterone": "0",
+        "bicarbonate": "0",
+        "hrv": "+",
+        "insulin_resistance": "0",
+        "parasympathetic": "+",
+        "vitamin_d_synthesis": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {
+            "aldosterone": "0",
+            "bicarbonate": "0",
+            "hrv": "+",
+            "insulin_resistance": "0",
+            "parasympathetic": "+",
+            "vitamin_d_synthesis": "0"
+          },
+          "paths": {
+            "hrv": [
+              "parasympathetic",
+              "hrv"
+            ],
+            "parasympathetic": [
+              "parasympathetic"
+            ]
+          },
+          "error": null
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {
+            "aldosterone": "0",
+            "bicarbonate": "0",
+            "hrv": "+",
+            "insulin_resistance": "-",
+            "parasympathetic": "+",
+            "vitamin_d_synthesis": "0"
+          },
+          "paths": {
+            "parasympathetic": [
+              "neostigmine",
+              "acetylcholinesterase_inhibition",
+              "parasympathetic"
+            ],
+            "hrv": [
+              "neostigmine",
+              "acetylcholinesterase_inhibition",
+              "parasympathetic",
+              "hrv"
+            ],
+            "insulin_resistance": [
+              "neostigmine",
+              "acetylcholinesterase_inhibition",
+              "parasympathetic",
+              "insulin_resistance"
+            ]
+          },
+          "error": null
+        }
+      ]
+    },
+    "h3_atropine_musc": {
+      "candidates": [
+        "acth",
+        "ampk",
+        "glucagon",
+        "hypoxic_drive",
+        "lactate",
+        "mucus",
+        "parasympathetic"
+      ],
+      "decoys": [
+        "acth",
+        "ampk",
+        "lactate",
+        "glucagon",
+        "hypoxic_drive"
+      ],
+      "human13": {
+        "acth": "0",
+        "ampk": "0",
+        "glucagon": "0",
+        "hypoxic_drive": "0",
+        "lactate": "0",
+        "mucus": "-",
+        "parasympathetic": "-"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_bromocriptine_d2": {
+      "candidates": [
+        "atp_demand",
+        "calcium_signal",
+        "gonadal_steroid",
+        "neutrophil",
+        "prolactin",
+        "shivering"
+      ],
+      "decoys": [
+        "atp_demand",
+        "shivering",
+        "neutrophil",
+        "gonadal_steroid",
+        "calcium_signal"
+      ],
+      "human13": {
+        "atp_demand": "0",
+        "calcium_signal": "0",
+        "gonadal_steroid": "0",
+        "neutrophil": "0",
+        "prolactin": "-",
+        "shivering": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {
+            "atp_demand": "0",
+            "calcium_signal": "-",
+            "gonadal_steroid": "0",
+            "neutrophil": "0",
+            "prolactin": "-",
+            "shivering": "0"
+          },
+          "paths": {
+            "calcium_signal": [
+              "bromocriptine",
+              "D2_dopamine_receptor",
+              "calcium_signal"
+            ],
+            "prolactin": [
+              "bromocriptine",
+              "D2_dopamine_receptor",
+              "calcium_signal",
+              "prolactin"
+            ]
+          },
+          "error": null
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_indomethacin_nsaid": {
+      "candidates": [
+        "headache",
+        "mental_fatigue",
+        "platelet",
+        "prostaglandin",
+        "splanchnic_flow",
+        "vitamin_d_synthesis",
+        "vldl"
+      ],
+      "decoys": [
+        "vitamin_d_synthesis",
+        "mental_fatigue",
+        "vldl",
+        "splanchnic_flow",
+        "headache"
+      ],
+      "human13": {
+        "headache": "-",
+        "mental_fatigue": "0",
+        "platelet": "-",
+        "prostaglandin": "-",
+        "splanchnic_flow": "0",
+        "vitamin_d_synthesis": "0",
+        "vldl": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {
+            "headache": "+",
+            "mental_fatigue": "+",
+            "platelet": "-",
+            "prostaglandin": "-",
+            "splanchnic_flow": "-",
+            "vitamin_d_synthesis": "0",
+            "vldl": "0"
+          },
+          "paths": {
+            "headache": [
+              "indomethacin",
+              "headache"
+            ],
+            "mental_fatigue": [
+              "indomethacin",
+              "mental_fatigue"
+            ],
+            "platelet": [
+              "indomethacin",
+              "prostaglandin",
+              "platelet"
+            ],
+            "prostaglandin": [
+              "indomethacin",
+              "prostaglandin"
+            ],
+            "splanchnic_flow": [
+              "indomethacin",
+              "prostaglandin",
+              "splanchnic_flow"
+            ]
+          },
+          "error": null
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_carbamazepine_siadh": {
+      "candidates": [
+        "adh",
+        "amylase",
+        "gi_fluid_loss",
+        "oxytocin",
+        "parasympathetic",
+        "tnf"
+      ],
+      "decoys": [
+        "parasympathetic",
+        "oxytocin",
+        "amylase",
+        "tnf",
+        "gi_fluid_loss"
+      ],
+      "human13": {
+        "adh": "0",
+        "amylase": "0",
+        "gi_fluid_loss": "0",
+        "oxytocin": "0",
+        "parasympathetic": "0",
+        "tnf": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {
+            "adh": "+",
+            "amylase": "0",
+            "gi_fluid_loss": "0",
+            "oxytocin": "0",
+            "parasympathetic": "-",
+            "tnf": "0"
+          },
+          "paths": {
+            "adh": [
+              "event",
+              "adh"
+            ],
+            "parasympathetic": [
+              "event",
+              "parasympathetic"
+            ]
+          },
+          "error": null
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {
+            "adh": "+",
+            "amylase": "-",
+            "gi_fluid_loss": "-",
+            "oxytocin": "+",
+            "parasympathetic": "-",
+            "tnf": "-"
+          },
+          "paths": {
+            "adh": [
+              "adh"
+            ],
+            "amylase": [
+              "parasympathetic",
+              "amylase"
+            ],
+            "gi_fluid_loss": [
+              "parasympathetic",
+              "gi_fluid_loss"
+            ],
+            "oxytocin": [
+              "oxytocin"
+            ],
+            "parasympathetic": [
+              "parasympathetic"
+            ],
+            "tnf": [
+              "tnf"
+            ]
+          },
+          "error": null
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_txa_antifib": {
+      "candidates": [
+        "fibrinolysis",
+        "il6",
+        "leptin_resistance",
+        "mtor",
+        "nk_cell",
+        "syncope_risk"
+      ],
+      "decoys": [
+        "leptin_resistance",
+        "syncope_risk",
+        "nk_cell",
+        "il6",
+        "mtor"
+      ],
+      "human13": {
+        "fibrinolysis": "-",
+        "il6": "0",
+        "leptin_resistance": "0",
+        "mtor": "0",
+        "nk_cell": "0",
+        "syncope_risk": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {
+            "fibrinolysis": "-",
+            "il6": "-",
+            "leptin_resistance": "0",
+            "mtor": "0",
+            "nk_cell": "-",
+            "syncope_risk": "+"
+          },
+          "paths": {
+            "fibrinolysis": [
+              "fibrinolysis"
+            ],
+            "il6": [
+              "fibrinolysis",
+              "il6"
+            ],
+            "nk_cell": [
+              "fibrinolysis",
+              "nk_cell"
+            ],
+            "syncope_risk": [
+              "syncope_risk"
+            ]
+          },
+          "error": null
+        }
+      ]
+    },
+    "h3_alteplase_tpa": {
+      "candidates": [
+        "airway",
+        "airway_inflammation",
+        "anaphylaxis_risk",
+        "fibrin",
+        "fibrinolysis",
+        "gi_fluid_loss",
+        "pth"
+      ],
+      "decoys": [
+        "gi_fluid_loss",
+        "airway",
+        "pth",
+        "airway_inflammation",
+        "anaphylaxis_risk"
+      ],
+      "human13": {
+        "airway": "0",
+        "airway_inflammation": "0",
+        "anaphylaxis_risk": "0",
+        "fibrin": "0",
+        "fibrinolysis": "0",
+        "gi_fluid_loss": "0",
+        "pth": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {
+            "airway": "0",
+            "airway_inflammation": "0",
+            "anaphylaxis_risk": "+",
+            "fibrin": "-",
+            "fibrinolysis": "+",
+            "gi_fluid_loss": "0",
+            "pth": "0"
+          },
+          "paths": {
+            "anaphylaxis_risk": [
+              "anaphylaxis_risk"
+            ],
+            "fibrin": [
+              "fibrinolysis",
+              "fibrin"
+            ],
+            "fibrinolysis": [
+              "fibrinolysis"
+            ]
+          },
+          "error": null
+        }
+      ]
+    },
+    "h3_linaclotide_gcc": {
+      "candidates": [
+        "acth",
+        "gi_fluid_loss",
+        "lipolysis",
+        "motility",
+        "oxygen_deficit",
+        "resolution",
+        "scfa"
+      ],
+      "decoys": [
+        "resolution",
+        "acth",
+        "lipolysis",
+        "scfa",
+        "oxygen_deficit"
+      ],
+      "human13": {
+        "acth": "0",
+        "gi_fluid_loss": "+",
+        "lipolysis": "0",
+        "motility": "+",
+        "oxygen_deficit": "0",
+        "resolution": "0",
+        "scfa": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {
+            "acth": "0",
+            "gi_fluid_loss": "+",
+            "lipolysis": "0",
+            "motility": "+",
+            "oxygen_deficit": "0",
+            "resolution": "0",
+            "scfa": "-"
+          },
+          "paths": {
+            "gi_fluid_loss": [
+              "gi_fluid_loss"
+            ],
+            "motility": [
+              "gi_fluid_loss",
+              "motility"
+            ],
+            "scfa": [
+              "gi_fluid_loss",
+              "motility",
+              "scfa"
+            ]
+          },
+          "error": null
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_guanfacine_a2": {
+      "candidates": [
+        "gh",
+        "iron_store",
+        "leukocyte",
+        "macrophage",
+        "mucus",
+        "sympathetic"
+      ],
+      "decoys": [
+        "iron_store",
+        "leukocyte",
+        "macrophage",
+        "gh",
+        "mucus"
+      ],
+      "human13": {
+        "gh": "0",
+        "iron_store": "0",
+        "leukocyte": "0",
+        "macrophage": "0",
+        "mucus": "0",
+        "sympathetic": "-"
+      },
+      "llm_only": [
+        {
+          "modules": {
+            "gh": "+",
+            "iron_store": "0",
+            "leukocyte": "-",
+            "macrophage": "-",
+            "mucus": "-",
+            "sympathetic": "-"
+          },
+          "paths": {
+            "gh": [
+              "gh"
+            ],
+            "leukocyte": [
+              "sympathetic",
+              "leukocyte"
+            ],
+            "macrophage": [
+              "macrophage"
+            ],
+            "mucus": [
+              "mucus"
+            ],
+            "sympathetic": [
+              "sympathetic"
+            ]
+          },
+          "error": null
+        },
+        {
+          "modules": {
+            "gh": "+",
+            "iron_store": "0",
+            "leukocyte": "0",
+            "macrophage": "0",
+            "mucus": "0",
+            "sympathetic": "-"
+          },
+          "paths": {
+            "gh": [
+              "gh"
+            ],
+            "sympathetic": [
+              "sympathetic"
+            ]
+          },
+          "error": null
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {
+            "gh": "+",
+            "iron_store": "0",
+            "leukocyte": "0",
+            "macrophage": "0",
+            "mucus": "-",
+            "sympathetic": "-"
+          },
+          "paths": {
+            "sympathetic": [
+              "sympathetic"
+            ],
+            "gh": [
+              "gh"
+            ],
+            "mucus": [
+              "mucus"
+            ]
+          },
+          "error": null
+        }
+      ]
+    },
+    "h3_water_load": {
+      "candidates": [
+        "adh",
+        "adiponectin",
+        "fatty_acid",
+        "piloerection",
+        "plasma_vol",
+        "sweat",
+        "tcell"
+      ],
+      "decoys": [
+        "fatty_acid",
+        "adiponectin",
+        "piloerection",
+        "sweat",
+        "tcell"
+      ],
+      "human13": {
+        "adh": "-",
+        "adiponectin": "0",
+        "fatty_acid": "0",
+        "piloerection": "0",
+        "plasma_vol": "+",
+        "sweat": "0",
+        "tcell": "0"
+      },
+      "llm_only": [
+        {
+          "modules": {
+            "adh": "-",
+            "adiponectin": "0",
+            "fatty_acid": "0",
+            "piloerection": "0",
+            "plasma_vol": "+",
+            "sweat": "0",
+            "tcell": "0"
+          },
+          "paths": {
+            "adh": [
+              "plasma_vol",
+              "adh"
+            ],
+            "plasma_vol": [
+              "plasma_vol"
+            ]
+          },
+          "error": null
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    },
+    "h3_orthostasis": {
+      "candidates": [
+        "baroreceptor",
+        "intestinal_gas",
+        "lipogenesis",
+        "orthostatic_stress",
+        "pth",
+        "sweat",
+        "syncope_risk"
+      ],
+      "decoys": [
+        "lipogenesis",
+        "baroreceptor",
+        "sweat",
+        "intestinal_gas",
+        "pth"
+      ],
+      "human13": {
+        "baroreceptor": "0",
+        "intestinal_gas": "0",
+        "lipogenesis": "0",
+        "orthostatic_stress": "+",
+        "pth": "0",
+        "sweat": "0",
+        "syncope_risk": "+"
+      },
+      "llm_only": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ],
+      "llm_grounded": [
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        },
+        {
+          "modules": {},
+          "paths": null,
+          "error": "expected string or bytes-like object, got 'NoneType'"
+        }
+      ]
+    }
+  }
+}

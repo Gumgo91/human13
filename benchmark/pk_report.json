@@ -1,0 +1,100 @@
+{
+  "model": "1st-order compartments + literature F/Vd/t½",
+  "rows": [
+    {
+      "entity": "ibuprofen",
+      "dose_mg": 400,
+      "vd_L": 9.8,
+      "pk_ref": "Davies 1998 Clin Pharmacokinet 34:101",
+      "our_cmax": 19.19,
+      "lit_cmax": [
+        30.0,
+        40.0
+      ],
+      "cmax_in_range": false,
+      "our_tmax_h": 1.78,
+      "lit_tmax_h": [
+        1.0,
+        2.0
+      ],
+      "tmax_in_range": true,
+      "ref": "Davies 1998 Clin Pharmacokinet 34:101"
+    },
+    {
+      "entity": "caffeine",
+      "dose_mg": 200,
+      "vd_L": 42.0,
+      "pk_ref": "Fredholm 1999 Pharmacol Rev 51:83",
+      "our_cmax": 3.55,
+      "lit_cmax": [
+        4.0,
+        8.0
+      ],
+      "cmax_in_range": false,
+      "our_tmax_h": 1.83,
+      "lit_tmax_h": [
+        0.5,
+        1.5
+      ],
+      "tmax_in_range": false,
+      "ref": "Fredholm 1999 Pharmacol Rev 51:83"
+    },
+    {
+      "entity": "acetaminophen",
+      "dose_mg": 1000,
+      "vd_L": 63.0,
+      "pk_ref": "Rowland & Tozer Clin Pharmacokinet",
+      "our_cmax": 8.84,
+      "lit_cmax": [
+        10.0,
+        25.0
+      ],
+      "cmax_in_range": false,
+      "our_tmax_h": 1.3,
+      "lit_tmax_h": [
+        0.5,
+        1.0
+      ],
+      "tmax_in_range": false,
+      "ref": "Prescott 1980 oral paracetamol kinetics"
+    },
+    {
+      "entity": "metformin",
+      "dose_mg": 500,
+      "vd_L": 210.0,
+      "pk_ref": "Scheen 1996 Clin Pharmacokinet 31:359",
+      "our_cmax": 0.9,
+      "lit_cmax": [
+        1.0,
+        2.0
+      ],
+      "cmax_in_range": false,
+      "our_tmax_h": 2.43,
+      "lit_tmax_h": [
+        2.0,
+        3.0
+      ],
+      "tmax_in_range": true,
+      "ref": "Scheen 1996 Clin Pharmacokinet 31:359"
+    },
+    {
+      "entity": "amoxicillin",
+      "dose_mg": 500,
+      "vd_L": 21.0,
+      "pk_ref": "Spyker 1977 AAC 11:132",
+      "our_cmax": 9.42,
+      "lit_cmax": [
+        5.5,
+        11.0
+      ],
+      "cmax_in_range": true,
+      "our_tmax_h": 1.57,
+      "lit_tmax_h": [
+        1.0,
+        2.0
+      ],
+      "tmax_in_range": true,
+      "ref": "Spyker 1977 Antimicrob Agents Chemother"
+    }
+  ]
+}
