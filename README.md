@@ -103,12 +103,11 @@ artifacts alone via `benchmark/aggregate_v4.py`.
 - [benchmark/VALIDATION.md](benchmark/VALIDATION.md) — benchmark definitions and result regeneration
 - [backend/models/README.md](backend/models/README.md) — fixed-model sources and reproduction scope
 - [figures/ui/FIGURE_SOURCE.md](figures/ui/FIGURE_SOURCE.md) — UI figure provenance and capture conditions
-- [README.ko.md](README.ko.md) — 한국어 안내
 
 ## Author
 
-**Hyunseung Kong** — AX Unit, GC Biopharma, Republic of Korea
-Correspondence: hskong@snu.ac.kr
+Anonymous authors
+Paper under double-blind review
 
 ## License
 
